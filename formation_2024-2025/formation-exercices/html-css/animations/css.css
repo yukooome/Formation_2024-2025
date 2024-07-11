@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Empêche le débordement et l'apparition des barres de défilement */
+}
+
+
+
+/* keyframes for bounce animation */
+
+/* 
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg) ;
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform : rotate(360deg)
+    }
+} */
+
+/* @keyframes slide-looping{
+    20%{
+        transform: translateX(25px);
+    }
+    25%{
+        transform: translate(25px, -5px) ;
+    }
+    27%{
+        transform: translate(25px, 0px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    75%{
+        transform: translateX(55px);
+    }
+    90%{
+        transform: translateX(55px);
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: translateX(55px);
+        transform: rotate(90deg);
+    }
+} */
+
+
+/* 
+@-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  } */
+
+  /* @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  } */
+  
+
+/* header */
+
+header {
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    box-shadow: 0rem 0.2rem 0.75rem;
+}
+
+.desktop-nav {
+    background-color: rgba(226, 204, 229, 0.708);
+    width: 100%;
+    height: 8vh;
+}
+
+.nav-barre {
+    width: 100%;
+    height: 8vh;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+
+    
+}
+
+nav ul li {
+    list-style: none; 
+    margin: 0 1.5rem; /* separation */
+}
+
+nav ul li img {
+    width: 50px;
+    animation: bounce 2s infinite; /* Ajout de l'animation bouncing */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: rgb(154, 40, 143);
+    
+}
+
+nav ul li a:hover {
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid rgb(154, 40, 143);
+}
+
+nav a:active {
+    color: hsl(283, 37%, 62%);
+}
+
+.ro {
+    display: inline-block; /* Assurez-vous que l'élément A soit un bloc en ligne */
+    position: relative; /* Définissez une position relative pour que la transformation fonctionne correctement */
+    transition: transform 0.3s ease; /* Ajoutez une transition fluide */
+}
+
+.ro:hover {
+    transform: rotate(360deg); /* Rotation de 360 degrés au survol */
+}
+
+
+
+/* container */
+section.container {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 0; /* Assurez-vous qu'il n'y a pas de padding */
+    position: sticky;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../animations/image/perso2.webp");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.pubg{
+    background-color: hwb(304 37% 44% / 0.541);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 900px;
+
+
+    h2{
+        /* background-color: aqua; */
+        width: 90%;
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        color: #f9e3e7;
+    }
+
+    p{
+        /* background-color: #1100ff; */
+        width: 90%;
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        color: #f9e3e7;
+    }
+}
+
+
+.scalation:hover {
+    transform: scale(120%);
+    transition: transform 0.75s ease-in-out 0s;
+
+}
+
+
+
+
+/* possibilite */
+section.possibilite{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 0; /* Assurez-vous qu'il n'y a pas de padding */
+    position: sticky;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../animations/image/arme.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenue{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.contenue img{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.contenue h3{
+    width: 100%;
+    height: 100%;
+    color: hsl(307, 31%, 83%);
+
+    font-size: 30px;
+}
+
+.movation:hover {
+    transform: translateX(10px);
+    transition: transform 0.5s ease-in 0s;
+
+}
+
+.scalation2:hover {
+    transform: scale(110%);
+    transition: transform 0.75s ease-in-out 0s;
+}
+
+.scalation3:hover {
+    transform: scale(-80%);
+    transition: transform 2.75s ease-in-out 0s;
+    /* transform: rotate3d(0); */
+    /* transform: rotate3d(1, 1, 1, 45deg); */
+    /* transform: rotate3d(2, -1, -1, -0.2turn); */
+    /* transform: rotate3d(0, 1, 0.5, 3.142rad); */
+    /* transform: rotateY(360deg); */
+    /* transform: rotate3d(0, 2, 0, 60deg); */
+}
+
+.flip-scale-2-hor-top {
+	-webkit-animation: flip-scale-2-hor-top 0.5s linear both;
+	        animation: flip-scale-2-hor-top 0.5s linear both;
+}
+
+
+
+
+/* video youtube */
+section.fonctionnalites {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+     /* Permet le "wrap" des cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: center; /* Centre les cartes verticalement */
+    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+    /* background-color: aqua; */
+    background-color: hwb(283 0% 97%)
+}
+
+
+.pose{
+    width: 80%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*  */
+.card {
+    
+   height: 55%;
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: flex;
+    
+
+    background-color: hwb(304 37% 44% / 0.541);
+    border: 1px solid rgba(54, 6, 51, 0.541);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.rotation:hover {
+    transform: rotate(-10deg) ; 
+    transition: transform 2s ease-in-out 0s;
+}
+
+
+
+.movation:hover {
+    transform: translateY(20px);
+    transition: transform 0.5s ease-in 0s;
+
+}
+
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+
+.sorry4urEyes {
+    animation: sorry4urEyes 2s infinite; 
+}
+
+@keyframes sorry4urEyes {
+    5% {
+        background-color: #f13cee;
+    }
+    15% {
+        background-color: #ab2aa9;
+    }
+    26% {
+        background-color: #7a1e78;
+    }
+    42% {
+        background-color: #571556;
+    }
+    60% {
+        background-color: #411041;
+    }
+    100% {
+        background-color: hwb(300 5% 83%);
+    }
+}
+
+
+
+/* animation */
+
+section.animation{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: end;
+
+    position: relative;
+    overflow: hidden; /* Assurez-vous que l'image ne déborde pas de la section */
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../animations/image/paysagezombie.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.animation img{
+    
+    position: absolute;
+
+}
+
+
+.militaire {
+    width: 10%;
+    animation: pursue 10s linear infinite; /* Animation pour le militaire */
+}
+
+.zombie {
+    width: 5%;
+    animation: flee 10s linear infinite; /* Animation pour le zombie */
+}
+
+
+
+@keyframes pursue {
+    0% {
+        left: -0%; /* Le militaire commence plus loin en dehors de la vue à gauche */
+        transform: scaleX(1); /* Orientation normale */
+    }
+    80% {
+        left: 80%; /* Le militaire arrive à 80% de la vue */
+        transform: scaleX(1); /* Orientation normale */
+    }
+    81% {
+        transform: scaleX(-1); /* Le militaire se retourne */
+    }
+    100% {
+        left: -70%; /* Le militaire retourne à gauche hors de la vue */
+        transform: scaleX(-1); /* Orientation inversée */
+    }
+}
+
+@keyframes flee {
+    0% {
+        right: -162%; /* Le zombie commence en dehors de la vue à gauche */
+    }
+    80% {
+        right: 0%; /* Le zombie se déplace vers la droite jusqu'à 80% */
+    }
+    100% {
+        right: 120%; /* Le zombie sort de la vue à droite */
+    }
+}
+
+
+
+/* footer */
+/* .footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(226, 204, 229, 0.708);
+} */

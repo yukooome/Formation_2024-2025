@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery couleurs</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <script defer src="../js/couleurorno.js"></script>
+    <script defer src="../js/tout-tableau.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon (2).ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script> <!-- lien pour les icons -->
+
+</head>
+<body>
+
+
+    <section class="top-page2">
+
+        <header class="header">
+            <img src="../images/blacklogo.png" alt="logo du site">
+            <nav class="nav">
+                <li><a href="htmlindex.html">Accueil</a> </li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Tableaux <i class="fas fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../htmlok/tout-tableau.html">Principal</a>
+                      <a href="../htmlok/couleurs.html">Couleurs</a>
+                      <a href="../htmlok/noir&blanc.html">Noir/Blanc</a>
+                    </div>
+                  </div>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="histoire.html">Notre histoire</a> </li>
+            </nav>
+        </header>
+
+    
+    <div class="full-img" id="fullImgBox">
+        <img src="" id="fullImg" alt="imgaleatoire">
+        <span onclick="closeFullImg()">X</span>
+        
+    </div>
+
+    <div class="img-gallery">
+        <div class="explica"><img class="img-details" src="../imagesgrande/acenoirblanc.jpg" alt="acenoirblanc" onclick="openFullImg(this.src)"><h4>Ace</h4> <p>Pirate flamboyant et charismatique de One Piece, maîtrise le feu grâce au Fruit du Démon "Mera Mera no Mi".</p></div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/allmightnoirblanc.jpg" alt="allmightnoirblanc" onclick="openFullImg(this.src)">
+            <h4>All Might</h4> 
+            <p>Le plus grand héros de My Hero Academia, symbolise la justice et la puissance.</p>
+        </div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/dekunoirblanc.jpg" alt="dekunoirblanc" onclick="openFullImg(this.src)">
+            <h4>Deku</h4>
+            <p>Héros en herbe de My Hero Academia, aspire à devenir le plus grand héros malgré ses débuts modestes.</p>
+        </div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/gokunoirblanc.jpg" alt="gokunoirblanc" onclick="openFullImg(this.src)">
+            <h4>Goku</h4> 
+            <p>Légendaire Saiyan, incarne la détermination infatigable et la soif constante de devenir plus fort pour protéger ses proches et défendre la justice.</p>
+        </div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/gutsnoirblanc.jpg" alt="gutsnoirblanc" onclick="openFullImg(this.src)">
+            <h4>Guts</h4> 
+            <p>Guerrier solitaire et endurci de Berserk, est animé par une détermination indomptable à se venger de ses ennemis et à trouver sa propre voie dans un monde de ténèbres et de chaos.</p>
+        </div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/zarakinoirblanc.jpg" alt="zarakinoirblanc" onclick="openFullImg(this.src)"> 
+            <h4>Zaraki</h4> 
+            <p>Guerrier intrépide et sauvage, est le capitaine de la 11e division de la Soul Society dans Bleach, incarnant la puissance brute et l'insouciance face au danger.</p>
+        </div>
+
+       <div class="explica">
+        <img class="img-details" src="../imagesgrande/luffynoirblanc.jpg" alt="luffynoirblanc" onclick="openFullImg(this.src)">
+        <h4>Luffy</h4> 
+        <p>Capitaine audacieux du Straw Hat Pirates, recherche le One Piece pour devenir le Roi des Pirates dans One Piece.</p>
+    </div>
+
+        <div class="explica">
+            <img class="img-details" src="../imagesgrande/meruemnoirblanc.jpg" alt="meruemnoirblanc" onclick="openFullImg(this.src)">
+            <h4>Meruem</h4> 
+            <p>Roi Chimera Ant de Hunter x Hunter, incarne la puissance et l'évolution dans un monde complexe.</p>
+        </div>
+
+    </div>
+
+
+    <section class="footer">
+        <p class="copy-right">&copy; 2024 - Yukooo_art - Tous droits réservés</p>
+        <p class="faitavec"> Fait avec <img width="10" src="https://cdn-icons-png.flaticon.com/128/35/35538.png" alt="coeur">
+        </p>
+        <div>
+            <a href="https://www.tiktok.com/@yukooo_art" target="_blank"><img width="30px" src="https://cdn-icons-png.flaticon.com/128/1946/1946552.png" alt="tiktok"></a>
+            <a href="https://www.instagram.com/yukooo_art/" target="_blank"><img width="30px" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="Logo Instagram"></a>
+            </div>
+</section>
+
+</body>
+</html>

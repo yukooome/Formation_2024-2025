@@ -1,0 +1,478 @@
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* Improve text rendering */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+
+/* Remove built-in form typography styles */
+
+button {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+	/* font-family: 'Kaisei Opti', "Sedan", serif; */
+}
+
+
+/* Nav section*/
+.nav-section {
+	width: 100%;
+	height: 5vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 2.5rem;
+    /* font-family: 'Kaisei Opti'; */
+	
+    p{
+        font-size: 100%;
+        /* background-color: rebeccapurple; */
+
+    }
+}
+/* 
+.speaker-container {
+	height: 8%;
+	width: 7%;
+
+	position: absolute;
+	right: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#speaker {
+	height: 1.4rem;
+	width: 1.4rem;
+}
+#speaker:hover {
+	cursor: pointer;
+} */
+
+
+.nav-deroule {
+	position: fixed;
+	left: 50px;
+	top: 28%;
+	width: 10%;
+	height: 50%;
+	background-color:hsla(240, 100%, 1%, 0.817);
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	font-size: 70%;
+	justify-content: space-around;
+	border-radius: 30px;
+  }
+
+.nav-menu {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+  }
+  
+  .nav-menu li {
+	width: 100%;
+	text-align: center;
+  }
+  
+  .nav-menu li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+  }
+  
+  .nav-menu li a:hover {
+	background-color: hsl(129, 59%, 35%);
+  }
+
+
+
+/* Styles pour l'en-tête du jeu du pendu */
+/* .header {
+    background-color: #D2E3C8;
+    width: 100%;
+    height: 7vh;
+    color: #4F6F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+} */
+
+/* .cover {
+    background-image: url('../images/equipe.png'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;  
+} */
+
+/* Styles pour le contenu principal */
+.tout {
+    display: flex;
+    width: 70%;
+    height: 85%;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.667);
+    border: 2px dashed #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 0;
+    left: 0; */
+    /* z-index: 10;
+    box-shadow: 0rem 0.2rem 0.75rem; */
+    box-shadow: 15px 15px 30px black;
+    backdrop-filter: blur(1px);
+}
+
+/* Main section */
+.cover {
+	width: 100%;
+	height: 99%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image:  url("/zdrstone_versionok/images/foretequipre.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+
+.haut {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 55%;
+    justify-content: space-around;
+    align-items: center; /* Centrer verticalement les éléments */
+    margin-top: 20px;
+    border: 2px solid #ffffff;
+    text-align: center; /* Centrer horizontalement les éléments */ ?????
+}
+
+.image img {
+    width: 350px;
+    height: 320px;
+}
+
+
+.hautdr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffffff;
+}
+
+
+
+
+
+/* Styles pour les éléments du jeu */
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+#board {
+    position: relative;
+    margin-bottom: 20vh;
+    letter-spacing: 5px;
+}
+
+#keyboard {
+  display: grid;
+    grid-template-columns: repeat(13, 100px);
+    grid-template-rows: repeat(2, 100px);
+    font-size: 30px;
+    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%; /* Ajustez la largeur selon vos besoins */
+    margin: 20px;
+    align-items: center;
+    align-content: center; /* Aligne les lignes au centre */
+    color: #ffffff;
+}
+
+
+.letters {
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    transition: .3s;
+    width: 40px; /* Largeur fixe */
+    height: 50px; /* Hauteur fixe */
+}
+
+.letters:hover {
+    background-color: #13790ef3;
+    color: #ffffff;
+}
+
+/* stat */
+
+.stats {
+    /* background-color:hsla(240, 100%, 1%, 0.589); */
+    color: #ffffff;
+    width: 20%;
+    height: 20%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.statpose{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    
+}
+
+.titre h2 {
+    /* background-color: #d3a625; */
+    text-decoration: underline;
+    font-size: 90%;
+}
+
+.nb {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 70%;
+    /* width: 100%; */
+}
+
+.button {
+    width: auto; /* Ajuste la largeur pour qu'elle s'adapte au contenu */
+    font-size: 0.7rem; /* Diminue la taille de la police */
+    padding: 0.2rem 0.5rem; /* Diminue le rembourrage */
+}
+
+#reset-stats {
+  background-color: #13790ef3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(98, 154, 55, 0.866);
+  align-self: center; /* Changez align-self: flex-start à align-self: center */
+}
+
+#reset-stats:hover {
+  box-shadow: 0 4px 8px 0 rgba(109, 161, 109, 0.866);
+  background-color: rgba(91, 232, 72, 0.893);
+
+	cursor: pointer; 
+}
+
+
+
+
+/* Styles pour le conteneur de l'image de fin */
+.end-image-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border: 2px dashed #ffffff;
+}
+
+/* Styles pour la partie sortie */
+.sorti {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px dashed #ffffff; /* Ajout d'un cadre pointillé avec la couleur spécifiée */
+}
+
+
+/* Styles pour l'image de fin */
+.end-image {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/* Styles pour le texte de fin */
+.end-text {
+    color: #fff;; /* Couleur du texte */
+    /* background-color: #D2E3C8;  */
+    font-size: 30px; /* Taille de la police */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 10px; /* Ajout de marge intérieure pour l'espace autour du texte */
+    border: 2px dashed #ffffff; /* Contour pointillé blanc */
+    width: 80%; /* Largeur du texte pour qu'il ne dépasse pas le conteneur */
+    line-height: 1.4; /* Espacement entre les lignes de texte */
+}
+
+
+
+
+
+
+
+/* footer */
+.container-footer{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+      justify-content: center; /* Centre les cartes horizontalement */
+      align-items: center; /* Centre les cartes verticalement */
+      overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+      /* background-color: aqua; */
+      background-image: linear-gradient( #110701,hsla(128, 94%, 20%, 0.747)), url("/zdrstone_versionok/images/senkurouge.jpg");
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #1ee951;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+  
+  

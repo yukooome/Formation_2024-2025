@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Hebdomadaire</title>
+    <link rel="stylesheet" href="css.css">
+    <script defer src="js.js"></script>
+
+    <script defer src="js2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/locale/fr.js"></script> 
+<!-- librairie dayjs -->
+</head>
+<body>
+
+
+    <div class="all">
+
+        <div class="container">
+            <table class="planning-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="jour">Lundi</th>
+                        <th class="jour">Mardi</th>
+                        <th class="jour">Mercredi</th>
+                        <th class="jour">Jeudi</th>
+                        <th class="jour">Vendredi</th>
+                        <th class="jour">Samedi</th>
+                        <th class="jour">Dimanche</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td class="semaine">Semaine 1</td>
+                        <td class="htmlcss" rowspan="2" colspan="2">html/css</td>
+                        <!-- <td>html/css</td> colspan Sert à retirer la ligne à côté-->
+                        <td rowspan="2" class="c">c#</td>
+                        <td class="htmlcss" rowspan="2">html/css</td>
+                        <td class="illustrator" rowspan="3">illustrator</td>
+                        <!-- rowspan Sert à retirer la ligne en dessous -->
+                        <td colspan="2" rowspan="4">week-end</td>
+                        <!-- <td>week</td> -->
+                    </tr>
+                    <tr>
+                        <td class="semaine">Semaine 2</td>
+                        <!-- <td class="htmlcss" colspan="2">html/css</td> -->
+                        <!-- <td>html/css</td> -->
+                        <!-- <td class="c">c#</td> -->
+                        <!-- <td class="htmlcss">html/css</td> -->
+                        <!-- <td>illustrator</td> -->
+                        <!-- <td>week</td> -->
+                    </tr>
+                    <tr>
+                        <td class="semaine">Semaine 3</td>
+                        <td class="c">c#</td>
+                        <td class="photoshop" colspan="2">Photoshop</td>
+                        <!-- <td>photoshop</td> -->
+                        <td class="js">js</td>
+                        <!-- <td>illustrator</td> -->
+                        <!-- <td>week</td> -->
+                    </tr>
+                    <tr>
+                        <td class="semaine">Semaine 4</td>
+                        <td class="htmlcss" >html/css</td>
+                        <td class="illustrator"> illustrator</td>
+                        <td class="c">c#</td>
+                        <td class="js" colspan="2">Js</td>
+                        <!-- <td>js</td> -->
+                        <!-- <td>week</td> -->
+                    </tr>               
+                </tbody>
+    
+            </table>
+        </div>
+    
+    
+        <!-- pour générer des avatars j'été sur ce site : https://getavataaars.com/?accessoriesType=Blank&avatarStyle=Circle&clotheColor=Black&clotheType=ShirtCrewNeck&eyeType=Default&eyebrowType=Default&facialHairType=Blank&hairColor=Brown&hatColor=Black&topType=LongHairStraightStrand -->
+    
+        <div class="container2">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Caractéristique</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="../image/alexandra.png" alt="Alexandra"></td>
+                            <td>Wathelet</td>
+                            <td>Alexandra</td>
+                            <td>Curieuse</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="../image/amandine.png" alt="Amandine"></td>
+                            <td>Ameye</td>
+                            <td>Amandine</td>
+                            <td>Determinée</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image2.jpg" alt="Bene"></td>
+                            <td>Lagasse</td>
+                            <td>Béné</td>
+                            <td>Débattrice</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="../image/Fatima.png" alt="Fathima"></td>
+                            <td>Bouazza</td>
+                            <td>Fathima</td>
+                            <td>Au revoir</td>
+                        </tr>
+
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image2.jpg" alt="Ksenia"></td>
+                            <td>Kozjanova</td>
+                            <td>Ksenia</td>
+                            <td>Intègre</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image3.jpg" alt="Lara"></td>
+                            <td>Lauro</td>
+                            <td>Lara</td>
+                            <td>Direct</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image4.jpg" alt="Laurie"></td>
+                            <td>Serwier</td>
+                            <td>Laurie</td>
+                            <td>Bon public</td>
+                        </tr>
+
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image2.jpg" alt="Magaly"></td>
+                            <td>Fernade</td>
+                            <td>Magaly</td>
+                            <td>Gentille</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="image3.jpg" alt="Sounia"></td>
+                            <td>Mhalla</td>
+                            <td>Sounia</td>
+                            <td>Attentionnée</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="../image/sounya.png" alt="Sounya"></td>
+                            <td>Abattouy</td>
+                            <td>Sounya</td>
+                            <td>Douce</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="../image/Tamara.png" alt="Tamara"></td>
+                            <td>Vanderbro</td>
+                            <td>Tamara</td>
+                            <td>Perséverante</td>
+                        </tr>
+                        <tr class="color">
+                            <td colspan="4"></td>
+                            <!-- <td></td>
+                            <td></td>
+                            <td></td> -->
+                        </tr>
+                        <tr>
+                            <td><img src="../image/zuzana.png" alt="Zuzana"></td>
+                            <td>Droppova</td>
+                            <td>Zuzana</td>
+                            <td>Aristique</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

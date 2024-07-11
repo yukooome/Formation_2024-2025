@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Le Quiz </title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="quizz.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="quizz.js"></script>
+  </head>
+  <body>
+
+    <section class="nav-section">
+
+      <nav class="nav-deroule">
+        <ul class="nav-menu">
+          <li><a href="../acceuil/html.html">Accueil</a></li>
+          <li><a href="../test-perso/perso.html">Personnage</a></li>
+          <li><a href="../inventions/invention.html">Skill</a></li>
+          <li><a href="../jeux/jeux.html">Nos jeux</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="speaker-container">
+        <img
+          src="../images/en-sourdine.png"
+          alt="speaker"
+          id="speaker"
+        />
+      </div>
+
+      <p>Quizz Dr. Stoon</p>
+    </section>
+
+
+    <section class="main-section" id="main-section">
+      <div class="modal" id="modal">
+        <div class="modal-container">
+          <img
+            src="../images/senkutsukasa.webp"
+            alt="image du aleatire"
+            id="aleatoire"
+          />
+          <p id="modal-text">
+            Choisissez votre camp
+            ou laisser les probabilités le faire 
+          </p>
+          <div class="houses-container">
+            <img
+              src="../images/senkuteam.jpg"
+              alt="emblème de teamsenku"
+              id="teamsenku"
+            />
+            <img
+              src="../images/tsukasateam.webp"
+              alt="emblème de teamtsukasa"
+              id="teamtsukasa"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="quiz-container hidden" id="quiz-container">
+        <h1>Question <span id="number"></span>/10</h1>
+        <div class="text-container">
+          <div class="question-container">
+            <p class="question" id="question"></p>
+          </div>
+          <div class="options-container">
+            <div class="options">
+              <input type="radio" name="option" value="option1" />
+              <label for="option1" id="option1"></label><br />
+              <input type="radio" name="option" value="option2" />
+              <label for="option2" id="option2"></label><br />
+              <input type="radio" name="option" value="option3" />
+              <label for="option3" id="option3"></label><br />
+              <input type="radio" name="option" value="option4" />
+              <label for="option4" id="option4"></label><br />
+            </div>
+          </div>
+        </div>
+        <div class="next-container">
+          <button id="next-button">Suivant</button>
+        </div>
+      </div>
+      <div class="score-container hidden" id="score-container">
+        <div class="image-container">
+          <img
+            src="../images/senkucontent.webp"
+            alt="Dumbledore"
+            id="Dumbledore"
+          />
+        </div>
+        <div class="results-container">
+        <h1>Score</h1>
+          <p id="score-text"></p>
+          <img src="../images/restart.png" alt="restart" id="restart" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <div class="copyright-container">
+        <p>©</p>
+        <p>2024</p>
+        <p>miss</p>
+      </div>
+    </section>
+    
+  </body>
+</html>

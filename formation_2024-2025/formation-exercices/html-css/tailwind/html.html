@@ -1,0 +1,322 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+        
+        html {
+            @apply scroll-smooth;
+            scrollbar-color: #6d1940 hsl(276, 69%, 81%);
+            scrollbar-width: thin;
+        }
+        /* button {
+            @apply bg-pink-700 text-pink-100 px-3 py-2 rounded-lg hover:bg-pink-100 hover:text-pink-700 dark:bg-black dark:text-white;
+        } */
+        a{
+           @apply hover:text-pink-400
+        }
+
+        .big {
+            @apply w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+        }
+
+        .rotate{
+            @apply bg-white shadow-md rounded-lg overflow-hidden hover:-rotate-3 hover:-translate-y-1 hover:scale-110 duration-300
+
+        }
+        
+         
+    </style> 
+</head>
+
+<body class="w-full h-max">
+
+    <section class="bg-[url('./images/wp7652849.webp')] bg-cover bg-no-repeat w-full h-svh relative">
+        <header class="">
+            <nav class="h-30 flex justify-between items-center w-full">
+                <img class="h-full w-20 shadow-lg shadow-pink-500 rounded-lg ml-20" src="./images/logocrunshy.webp" alt="Logo" class="nav-logo">
+                <!-- <form action="" method="GET">
+                    <input id="search" type="text" class="inputplaceholder-shown:border-pink-500"  placeholder=" recherche" name="q">
+                    <button class="bg-pink-700 text-pink-100 px-3 py-1 rounded-lg hover:bg-pink-100 hover:text-pink-700" type="submit">Rechercher</button>
+                </form> -->
+                <ul class="flex h-full items-center space-x-10 color text-white mr-20 my-10">
+                    <li><a href="#" class="hey text-2xl">Accueil</a></li>
+                    <li><a href="#" class="text-2xl">Personnages</a></li>
+                    <li><a href="#" class="text-2xl">Skills</a></li>
+                    <li><a href="#" class="text-2xl">Nos jeux</a></li>
+                    <li><a href="#" class="text-2xl">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="absolute bottom-10 left-40 w-4/12 h-70 flex justify-center items-center space-x-4 pb-10 ">
+
+            <div class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+                <img class="w-full h-full object-cover" src="./images/nezcarree1.webp" alt="Image 1">
+                <a href="lien_vers_votre_page.html">
+                    <h1 class=" inset-y-0 left-0 text-pink-500 text-center p-4 bg-orange-300 font-cactus">Jeux</h1>
+                </a>
+            </div>
+
+            <div class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+                <img class="w-full h-full object-cover" src="./images/nezcarree2.webp" alt="Image 2">
+                <a href="lien_vers_votre_page.html">
+                    <h1 class=" inset-y-0 left-0 text-pink-100 bg-pink-500 text-center p-4">Goodies</h1>
+                </a>
+            </div>
+
+            <div class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+                <img class="w-full h-full object-cover" src="./images/nezcarree3.gif" alt="Image 3">
+                <a href="https://youtu.be/hiU84Fx5sOE?si=_eIXH-e2opZaPn2c">
+                    <h1 class="inset-y-0 left-0 text-yellow-500 bg-pink-100 text-center p-4">Watch</h1>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="w-full h-96 bg-black flex justify-center items-center overflow-hidden">
+        <div class="w-10/12 h-4/6 space-x-10 mt-10 mx-10 flex">
+            <div class="w-1/3 h-full relative">
+                <img class="big" src="./images/nez1.jpg" alt="">
+                <div class="absolute inset-y-0 left-0 w-1/2 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-xs color text-pink-100">une force surhumaine après être devenue un démon. Elle peut briser des rochers, se régénérer rapidement et utiliser le "Blood Demon Art" pour enflammer son sang. Malgré tout, elle protège les humains et son frère Tanjiro, faisant d'elle une alliée puissante et déterminée.</p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full relative">
+                <img class="big" src="./images/nez2.jpg" alt="">
+                <div class="absolute inset-y-0 left-0 w-1/2 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-xs color text-pink-100"> incroyablement gentille, même après sa transformation en démon. Elle refuse d'attaquer les humains et protège les innocents, surtout son frère Tanjiro. Sa douceur et sa bienveillance montrent sa force intérieure et son amour pour sa famille.</p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full relative">
+                <img class="big" src="./images/nez3.jpg" alt="">
+                <div class="absolute inset-y-0 left-0 w-1/2 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-xs color text-pink-100">montre un amour profond pour son frère Tanjiro. Malgré sa transformation en démon, elle le protège constamment et reste à ses côtés. Leur lien fort la motive à lutter contre ses instincts démoniaques, démontrant ainsi son dévouement inébranlable et son affection incommensurable pour lui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <section class="w-full h-auto relative py-10 bg-gradient-to-r from-black to-white" >
+        <div class="container mx-auto">
+            <div class="grid grid-cols-4 gap-6">
+                <!-- Carte 1 -->
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/nezmims.jpg" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">NEZUKO CHAN</h2>
+                        <p class="text-gray-600 mt-2"> jeune femme déterminée dotée d'une force surhumaine et d'un cœur généreux, prête à tout pour protéger ceux qu'elle aime.</p>
+                    </div>
+                </div>
+    
+                <!-- Carte 2 -->
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/neztanji.webp" alt="Image 2">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">NEZUKOxTANJIRO</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 2.</p>
+                    </div>
+                </div>
+    
+                <!-- Carte 3 -->
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/nezblond.jpg" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">NEZUKOxZENITSU</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+
+                <div class="rotate">
+                    <img class="w-full h-48 object-cover object-center" src="./images/wp7652849.webp" alt="Image 1">
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold text-gray-800">Titre de la carte 1</h2>
+                        <p class="text-gray-600 mt-2">Description de la carte 1.</p>
+                    </div>
+                </div>
+                
+
+    
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <section class="w-full h-44 bg-black flex justify-center items-center overflow-hidden">
+        <div class="w-10/12 h-full space-y-10 mt-10 mx-10 flex flex-col">
+            <div class="flex-1 relative h-full flex justify-center items-center">
+                <img class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="./images/paysage.jpg" alt="">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-white text-center">Une force surhumaine après être devenue un démon. Elle peut briser des rochers, se régénérer rapidement et utiliser le "Blood Demon Art" pour enflammer son sang. Malgré tout, elle protège les humains et son frère Tanjiro, faisant d'elle une alliée puissante et déterminée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+
+
+
+    <section class="w-full h-96 bg-black flex justify-center items-center overflow-hidden">
+        <div class="w-10/12 h-4/6 space-x-10 mt-10 mx-10 flex">
+            <div class="w-1/3 h-full relative">
+                <img class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="./images/nez1.jpg" alt="">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-white text-center">Une force surhumaine après être devenue un démon. Elle peut briser des rochers, se régénérer rapidement et utiliser le "Blood Demon Art" pour enflammer son sang. Malgré tout, elle protège les humains et son frère Tanjiro, faisant d'elle une alliée puissante et déterminée.</p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full relative">
+                <img class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="./images/nez2.jpg" alt="">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-white text-center">Incroyablement gentille, même après sa transformation en démon. Elle refuse d'attaquer les humains et protège les innocents, surtout son frère Tanjiro. Sa douceur et sa bienveillance montrent sa force intérieure et son amour pour sa famille.</p>
+                </div>
+            </div>
+            <div class="w-1/3 h-full relative">
+                <img class="w-full h-full object-cover object-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" src="./images/nez3.jpg" alt="">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4">
+                    <h1 class="text-white text-center p-2">Nezuko</h1>
+                    <p class="text-white text-center">Montre un amour profond pour son frère Tanjiro. Malgré sa transformation en démon, elle le protège constamment et reste à ses côtés. Leur lien fort la motive à lutter contre ses instincts démoniaques, démontrant ainsi son dévouement inébranlable et son affection incommensurable pour lui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Section 1: Logo et informations -->
+                <div class="md:col-span-2 lg:col-span-1">
+                    <h1 class="text-2xl font-bold">Footer</h1>
+                    <p class="text-sm">© 2024 Tous droits réservés.</p>
+                </div>
+                <!-- Section 2: Liens rapides -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-2">Liens Rapides</h2>
+                    <ul class="list-none">
+                        <li><a href="#" class="text-sm">...</a></li>
+                        <li><a href="#" class="text-sm">...</a></li>
+                        <li><a href="#" class="text-sm">...</a></li>
+                        <li><a href="#" class="text-sm">...</a></li>
+                    </ul>
+                </div>
+                <!-- Section 3: Contact -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-2">Contact</h2>
+                    <p class="text-sm">Adresse: 123 rue de nezuko , Village</p>
+                    <p class="text-sm">Email: Nezuko@example.com</p>
+                    <p class="text-sm">Téléphone: +1234567890</p>
+                </div>
+                <!-- Section 4: Réseaux sociaux -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-2">Suivez-nous</h2>
+                    <ul class="list-none">
+                        <li><a href="#" class="text-sm">Facebook</a></li>
+                        <li><a href="#" class="text-sm">Twitter</a></li>
+                        <li><a href="#" class="text-sm">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>

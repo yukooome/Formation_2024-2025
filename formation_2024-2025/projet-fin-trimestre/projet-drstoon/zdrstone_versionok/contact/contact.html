@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../contact/contact.css">
+    <script defer src="../contact/contact.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+<!-- font 1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font4 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+
+    
+    <header class="desktop-nav">
+        <nav class="nav-barre">
+            <ul>
+                <header class="desktop-nav">
+                    <nav class="nav-barre">
+                        <ul>
+                            <li><img src="/zdrstone_versionok/images/logo2.png" alt="Logo" class="nav-logo"></li>
+                            <li><a href="/zdrstone_versionok/acceuil/acceuil.html">Accueil</a></li>
+                                <li><a href="/zdrstone_versionok/personnage/acceuilperso.html">Personnages</a></li>
+                                <li><a href="#skill">Skills</a></li>
+                            
+                                <li><a href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+                                <li><a href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        </nav>
+    </header>
+
+
+    <!-- si en mobile -->
+ 
+    <header class="mobil-nav">
+      <div class="nav-mob">
+          <!-- <img src="../images/logo2.png" alt="Logo" class="nav-logo"> -->
+      <ul class="menu">
+          <li><a class="menuItem" href="/zdrstone_versionok/acceuil/acceuil.html">Accueil</a></li>
+          <li><a class="menuItem" href="/zdrstone_versionok/personnage/acceuilperso.html">Personnages</a></li>
+          <li><a class="menuItem" href="#">Skills</a></li>
+          <li><a class="menuItem" href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+          <li><a class="menuItem" href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+          <li><a class="menuItem" href="#">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
+      </div>
+  </header>
+
+
+
+
+<section class="contact">
+
+  
+  <!-- <div class="img-bg">
+    <img src="../images/svgsenkupotion.png" >
+  </div> -->
+  
+  <div class="contact-form">
+
+    <img src="../images/senkuassisvg2.png" alt="">
+    <form id="contactForm">
+        <div class="true-form">
+
+          <div class="tjrsplus">
+
+
+            <div class="appelation">
+                <label for="nom">Nom:</label>
+                <input type="text" placeholder="Ex: Ishigami" id="nom" name="nom" required>
+                
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" placeholder="Ex: Senku" name="prenom" required>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Ex: Senku.Ishigami@gmail.com"id="email" name="email" required>
+               </div>
+                       
+            <label class="message" for="message">Message:</label>
+            <textarea id="message" placeholder="Ex: Votre site est incroyable"name="message" rows="4" required></textarea>
+          </div>
+
+
+          <div class="check">
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter"> Je souhaite m'abonner à la newsletter </label>
+        </div>
+        <!-- <div class="info-aste"> tous les champs sont obligatoires</div> -->
+        
+        <div class="envoyer">
+          <button type="submit">Envoyer</button>
+        </div> 
+        </div>
+        </form>
+    </div>
+    
+</section>
+    
+    
+    
+    
+
+
+
+
+    
+    <section>
+        <footer class="footer">
+            <div class="container-footer">
+             <div class="row-footer">
+               <div class="footer-col">
+                 <h4>companie</h4>
+                 <ul>
+                   <li><a href="#">à propos</a></li>
+                   <li><a href="#">nos services</a></li>
+                   <li><a href="#">politique privé</a></li>
+                   <!-- <li><a href="#">affiliate program</a></li> -->
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>Plus aide</h4>
+                 <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">...</a></li>
+                   <li><a href="#">...</a></li>
+                   <li><a href="#">...</a></li>
+                   <!-- <li><a href="#">shipping</a></li> -->
+                   <!-- <li><a href="#">returns</a></li> -->
+                   <!-- <li><a href="#">order status</a></li> -->
+                   <!-- <li><a href="#">payment options</a></li> -->
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>goodies</h4>
+                 <ul>
+                   <li><a href="#">watch</a></li>
+                   <li><a href="#">bag</a></li>
+                   <li><a href="#">shoes</a></li>
+                   <li><a href="#">dress</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>Nous suivre</h4>
+                 <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+               </div>
+             </div>
+            </div>
+         </footer>
+    </section>
+
+
+</body>
+</html>

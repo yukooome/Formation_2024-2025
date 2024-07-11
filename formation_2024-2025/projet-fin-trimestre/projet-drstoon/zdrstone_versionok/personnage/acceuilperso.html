@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personnages</title>
+		<link rel="stylesheet" href="../personnage/acceuilperso2.css" />
+		<script defer src="../personnage/personnage.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- lien pour les icons -->
+
+		
+<!-- font 1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font4 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body>
+		
+		<header class="desktop-nav">
+			<nav class="nav-barre">
+				<ul>
+					<header class="desktop-nav">
+						<nav class="nav-barre">
+							<ul>
+								<li><img src="../images/logo2.png" alt="Logo" class="nav-logo"></li>
+								<li><a href="/zdrstone_versionok/acceuil/acceuil.html">Accueil</a></li>
+									<li><a href="#">Personnages</a></li>
+									<li><a href="#skill">Skills</a></li>
+										   
+									<li><a href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+									<li><a href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+									<li><a href="/zdrstone_versionok/contact/contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+			</nav>
+		</header>
+
+
+
+
+
+		<section class="liste-perso">
+			<div class="separation">
+				<!-- personnages -->
+			<div class="personnages-container">
+				<h1>PERSONNAGES</h1>
+				<hr class="line">
+				<div class="cherch">
+					<input type="text" id="search-input">
+				<button id="search-button">Rechercher</button>
+				</div>
+				<main>
+					<div class="main-container" id="invention-container">
+						<ul class="gallery"></ul>
+					</div>
+				</main>
+			</div>
+			<div class="autre-choix"></div>
+			<!-- Section pour afficher les détails du personnage -->
+			<div class="character-details" id="character-details" style="display: none;">
+				<button id="close-details">Close</button>
+				<div class="scroll">
+					<h2 id="character-name"></h2>
+				<img id="character-image" src="" alt="">
+				<p id="character-apparition"></p>
+				<p id="character-role"></p>
+				<p id="character-personnalite"></p>
+				<p id="character-competences"></p>
+				<p id="character-apparence"></p>
+				<p id="character-relations"></p>
+				<p id="character-evolution"></p>
+				</div>
+			</div>
+			<div class="personnage">
+				
+				<div class="information-perso">
+					<div class="info">
+						<div class="text-info">
+							<div class="pose">
+								<div class="image-container">
+									<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<img class="overlay" src="../images/senkusvg.png" alt="Image superposée">
+								</div>
+								<p>
+									<span>Diversité des Compétences :</span> Chaque membre de l'équipe apporte des compétences uniques. Senku est un génie scientifique, Taiju possède une force physique exceptionnelle, Yuzuriha est habile de ses mains, et d'autres personnages, comme Chrome, un jeune scientifique en herbe, et Kohaku, une guerrière habile, ajoutent encore plus de diversité. Cette combinaison de talents permet à l'équipe de surmonter divers défis et d'accomplir des tâches complexes, démontrant l'importance de la collaboration interdisciplinaire.
+								</p>
+							</div>
+			
+							<div class="pose">
+								<div class="image-container">
+									<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<img class="overlay2" src="../images/equipe.png" alt="Image superposée">
+								</div>
+								<p>
+									<span>Évolution et Développement des Personnages :</span> Les personnages de "Dr. Stone" évoluent de manière significative tout au long de la série. Ils grandissent non seulement en termes de compétences et de connaissances, mais aussi sur le plan émotionnel et relationnel. Par exemple, Senku apprend à apprécier davantage l'importance des relations humaines et de la coopération, tandis que des personnages comme Taiju et Yuzuriha développent une meilleure compréhension des sciences.
+								</p>
+							</div>
+			
+							<div class="pose">
+								<div class="image-container">
+									<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<div class="image-cote">
+										<img class="overlay3" src="../images/perefils.jpg" alt="Image superposée">
+										<img class="overlay3" src="../images/senkupierre.jpg" alt="Image superposée">
+										<img class="overlay3" src="../images/senkufeu.jpg" alt="Image superposée">
+										
+									</div>
+								</div>
+								<p>
+									<span>Synergie et Camaraderie :</span> La dynamique de groupe et la camaraderie entre les membres de l'équipe sont profondément engageantes. Leur volonté de travailler ensemble malgré leurs différences et de surmonter les obstacles ensemble crée une forte connexion émotionnelle avec le public. Cette synergie montre comment des personnes aux horizons divers peuvent unir leurs forces pour atteindre des objectifs communs.
+								</p>
+							</div>
+			
+							<div class="pose">
+								<div class="image-container">
+									<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<div class="overlay5">
+										<h1>SURPRISE</h1>
+									</div>
+									<img class="overlay4" src="../images/senkuassisvg2.png" alt="Image superposée">
+								</div>
+								<p>
+									<span>Exploration des Thèmes Profonds :</span> L'équipe permet à la série d'explorer des thèmes complexes tels que la survie, l'ingéniosité humaine, et l'importance de la science dans la société. À travers leurs aventures et leurs découvertes, la série met en lumière des questions éthiques et philosophiques, comme la reconstruction d'une société idéale et la responsabilité de l'humanité envers la science et la technologie.
+								</p>
+							</div>
+			
+							<div class="pose">
+								<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<img class="overlay" src="" alt="Image superposée">
+								<p>
+									<span>Innovation et Créativité :</span> Les membres de l'équipe, guidés par Senku, utilisent leur ingéniosité pour recréer des technologies modernes à partir de ressources naturelles. Chaque innovation, qu'il s'agisse de la création de la lumière électrique ou de la fabrication de médicaments, est une aventure en soi, captivant les lecteurs et les spectateurs par la manière dont la science peut transformer le monde.
+								</p>
+							</div>
+
+							<div class="pose">
+								<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<img class="overlay" src="" alt="Image superposée">
+								<p>
+									<span>Innovation et Créativité :</span> Les membres de l'équipe, guidés par Senku, utilisent leur ingéniosité pour recréer des technologies modernes à partir de ressources naturelles. Chaque innovation, qu'il s'agisse de la création de la lumière électrique ou de la fabrication de médicaments, est une aventure en soi, captivant les lecteurs et les spectateurs par la manière dont la science peut transformer le monde.
+								</p>
+							</div>
+							<div class="pose">
+								<img class="fdecran" src="../images/fdecran7.avif" alt="Fond d'écran">
+									<img class="overlay" src="" alt="Image superposée">
+								<p>
+									<span>Innovation et Créativité :</span> Les membres de l'équipe, guidés par Senku, utilisent leur ingéniosité pour recréer des technologies modernes à partir de ressources naturelles. Chaque innovation, qu'il s'agisse de la création de la lumière électrique ou de la fabrication de médicaments, est une aventure en soi, captivant les lecteurs et les spectateurs par la manière dont la science peut transformer le monde.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+
+            </div>
+        </section>
+
+
+		
+		
+		<section>
+			<footer class="footer">
+				<div class="container-footer">
+				 <div class="row-footer">
+				   <div class="footer-col">
+					 <h4>companie</h4>
+					 <ul>
+					   <li><a href="#">à propos</a></li>
+					   <li><a href="#">nos services</a></li>
+					   <li><a href="#">politique privé</a></li>
+					   <!-- <li><a href="#">affiliate program</a></li> -->
+					 </ul>
+				   </div>
+				   <div class="footer-col">
+					 <h4>Plus aide</h4>
+					 <ul>
+					   <li><a href="#">FAQ</a></li>
+					   <li><a href="#">...</a></li>
+					   <li><a href="#">...</a></li>
+					   <li><a href="#">...</a></li>
+					   <!-- <li><a href="#">shipping</a></li> -->
+					   <!-- <li><a href="#">returns</a></li> -->
+					   <!-- <li><a href="#">order status</a></li> -->
+					   <!-- <li><a href="#">payment options</a></li> -->
+					 </ul>
+				   </div>
+				   <div class="footer-col">
+					 <h4>goodies</h4>
+					 <ul>
+					   <li><a href="#">watch</a></li>
+					   <li><a href="#">bag</a></li>
+					   <li><a href="#">shoes</a></li>
+					   <li><a href="#">dress</a></li>
+					 </ul>
+				   </div>
+				   <div class="footer-col">
+					 <h4>Nous suivre</h4>
+					 <div class="social-links">
+					   <a href="#"><i class="fab fa-facebook-f"></i></a>
+					   <a href="#"><i class="fab fa-instagram"></i></a>
+					   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+					 </div>
+				   </div>
+				 </div>
+				</div>
+			 </footer>
+		</section>
+	
+
+				
+	
+
+        
+	</body>
+</html>

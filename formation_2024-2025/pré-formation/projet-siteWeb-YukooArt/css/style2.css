@@ -1,0 +1,720 @@
+
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+ /* Montserrat : aller sur google font et copier en @import l'intérieur */
+
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap); 
+/* Abril fatface */
+
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap);
+
+
+
+* {}
+
+body{
+    margin: 0 auto;   
+}
+
+section.top-page {
+    background: url(../images/banmeimg.png);
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+
+    /* width: 100vw; */
+}
+
+section.top-page2 {
+    height: 100vh; /* placement */
+    padding: 25px;
+}
+
+
+
+/* page de bienvenu (landing page) */
+.landing-page {
+    padding: 90px 80px; /* placement grand titre */
+}
+
+.big-title{
+    color: #442408;
+    font-size: 80px;
+    font-family: 'inconsolata';
+    position: relative; /*  peut être déplacé ou décalé */
+    width: 45%;
+    margin-left: 5%;
+
+    /* top: 300%; */
+}
+
+.scroll-down{
+    color: #442408;
+    text-decoration: none;
+    position: absolute; /* positionner un élément par rapport à son conteneur */
+    bottom: 80px;  /* placement bas de section */
+}
+
+
+
+/* menu de navigation */
+header.header img {
+    width: 60px; /* taille logo */
+}
+
+header.header{
+    display: flex; /* intérieur de ce conteneur deviennent des éléments flexibles */
+    align-items: center;
+    width: 100%;
+    height: 6%;
+
+    /* background-color: #F0EBE3;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px; */
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;  /* type d'espacement */
+    list-style: none; /* pas de petits points */
+    width: 500px;
+    margin-left: 50px; 
+    font-size: 19px;   
+}
+
+nav li a {
+    text-decoration: none;  /* pas souligné */
+    color: #442408;  /* lien est de base bleu par défaut */
+}
+
+nav li a:hover{  /*  sélecteur utilisé pour cibler un lien hypertexte */
+    color: #bc8a5f;
+}
+
+
+
+/* dropdown tableaux*/
+.dropbtn {
+  color: #442408;
+  border: none; /* enleve les bordures autours du bouton */
+  cursor: pointer; /* permet de pointer le bouton */
+  border-radius: 40%; /* arrondit bouton */
+  background-color: #F0EBE3;
+  font-size: 17px;
+  
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    color: #bc8a5f;  /* changement de couleur du text bouton lors du passage du pointeur */
+}
+
+.dropdown {
+    /* position: relative; */
+    /* display: inline-block; */
+    /* je ne vois pas de changement avec ou sans */
+    
+}
+
+.dropdown-content {
+    display: none; /* cacher temporairement un element */
+    position: absolute;  /* positionner fixe un élément par rapport à son conteneur */
+    background-color: whitesmoke;   
+     /* min-width: 120px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* couleur autour du block : droite , bas, opacite, contour  */
+    z-index: 1;     /* contrôle l'empilement des éléments positionnés, on va pouvoir cliquer sur les element car ils ont une place definit chacun a leur tour */
+  }
+
+.dropdown-content a {
+    color: #442408;  /* color les liens dans le block */
+    padding: 13px 9px;  /* longueur, largeur du block  */
+    text-decoration: none;
+    display: block;  /* met element en dessous de l'autre comme un block  */
+  }
+
+.dropdown-content a:hover {
+    background-color: #EAD8C0;    /* permet le changement de couleur lors du passage sur un element du block */
+}
+
+.show {
+    display:block;
+    /* permet de faire apparaitre l'element sous forme de block grace a javascript */
+}
+
+
+
+
+/* service proposé */
+.services {
+    display: flex;   /* permet de les aligner cote a cote */
+    justify-content: space-evenly;    /* type d'espacement */
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #442408;
+    margin: 10%;
+}
+
+.service-item{
+    display: flex;    /* dispose cote a cote */
+    flex-direction: column;   /* souhait d'une direction en colonne */
+    align-items: center;   /* centrer les elements de la colonne */
+}
+
+.service-details {
+    color: #bc8a5f;
+    font-weight: 600;   /* epaisseur text */
+    width: 200px;   /* largeur de la box contenant le text */
+    text-align: center;
+}
+
+
+
+/* caroussel */
+
+/* section .card-content  */
+.image-caroussels{
+    height: 140px;   /* longueur place photo */
+    width: 140px;   /* largueur place photo */
+    border-radius: 50%;  /* arrondit autour image mais qui fait parti de la carte */
+    padding: 0px;   /* epaisseur couleur autour de l'image */
+    background-color: #D1BB9E;
+}
+
+section.caroussels{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background: #F0EBE3;
+    
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+
+section .card-content .image-caroussels img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   /* image vient couvrir la parti desirée */
+    border-radius: 50%;   /* image ronde */
+    border: 4px solid #EAD8C0;   /* bordure autour de la photo */
+    
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;   /* arrondit de la partie blanche de la carte */
+    background: #fff;
+    width: 70%;
+
+    /* margin: 20px 0; */
+}
+
+.card::before{
+    content: "";   /* permet de faire apparaitre un contenu */
+    position: absolute;   /* ne bougera pas de la place donné */
+    height: 20%;   /* hauteur de la déco */
+    width: 100%;   /* largeur de la déco */
+    background-color: #D1BB9E;
+    border-radius: 20px 20px 0 0;   /* arrondit de la déco */
+}
+
+
+.card-content {
+   display: flex;
+   flex-direction: column;  
+   align-items: center;
+   position: relative;  /* permet de mettre l'image au dessus de la déco */
+   padding: 30px;  /* permet de mettre l'image un peu plus bas par rapport au bord supp */
+
+   /* z-index:100; */
+}
+
+.name-caroussel{
+    text-align: center;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.job-caroussel{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.text-caroussel{
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+div.tout-caroussel{
+    display: flex; 
+    margin-left: 10%;   /* décalle vers la droite */
+
+    /* justify-content: center; */
+}
+
+div.star {
+    text-align: center;
+}
+
+
+/* footer barre bas  */
+.footer{
+    display: flex;   /* elements cote a cote */
+    justify-content: space-between;   /* type espacement */
+    align-items: center;   /* centre hauteur de la section */
+    margin: 5px;
+    font-weight: 400;
+    color: #442408;
+    padding: 0 20px 0px 20px;   /* haut, droite, bas, gauche */  
+}
+
+
+
+
+/* canva best */
+.section-title {
+    font-size: 55px;   /* taille titre */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;   /* épaisseur titre */
+    position: relative;   /* permet de modifier la place des éléments */
+    text-align: center;  /* titre centré */
+}
+
+.section-title::before{
+    content: "";    /* permet d'apporter un contenu "souligné" */
+    position: absolute;   /* définit une position qui ne bouge pas */
+    background-color: #bc8a5f;
+    width: 50px;   /* longueur de la barre "souligné" */
+    height: 6px;   /* hauteur/epaisseur qu'on donne au "souligné" */
+    bottom: 0;   /* on place la barre juste en dessous */
+}
+
+.more{
+    font-size: 20px;    /* taille du texte */
+    text-align: center;   /* centré */
+
+    /* background-color: aqua; */
+    /* justify-content: center; */
+}
+
+.more a {
+    text-decoration: none;   /* pas souligné par défaut */
+    color: #442408;   /* couleur du texte qui est mauve par défaut*/
+}
+
+.more a:hover{
+    color: #bc8a5f;  /* changement de couleur lors du passage */
+}
+
+.bests-items{
+    margin-left: 250px;
+    margin-right: 250px;
+    /* une marge a gauche et a droite */
+}
+
+.best-canva{
+    display: flex;
+    flex-wrap: wrap;   /* lorsque la page est plus petite les éléments s'adapte */
+
+    /* min-height: 30px; */
+}
+
+.canva-box{
+    position: relative;   /* permet de positionner chaques éléments comme on veut */
+    min-width: 300px;   /* largeur minimum */
+    height: 400px;  /* hauteur qu'on donne aux case */  
+    flex: 1;
+    background-size: cover;   /* image se positionne de facon a faire la couverture */
+    background-position: center;      /* image se positionne de facon a etre centré */
+}
+
+.tableau1{
+    background-image: url(../images/astacouleur.jpg);
+    margin-right: 10px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau2{
+    background-image: url(../images/kakashicouleur.jpg);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau3{
+    background-image: url(../images/zarakicouleur.jpg);
+    margin-left: 10px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau4{
+    background-image: url(../images/gokucouleur.jpg);
+    margin-right: 10px;
+    margin-top: 7px;
+    transition: 3s;
+}
+
+.tableau5{
+    background-image: url(../images/yuyucouleur.jpg);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    transition: 3s;
+}
+
+.tableau6{
+    background-image: url(../images/nezukocouleur.jpg);
+    margin-left: 10px;
+    margin-top: 7px;
+    transition: 3s;
+
+}
+
+.tableau7{
+    background-image: url(../images/acenoirblanc.jpg);
+    margin-right: 10px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau8{
+    background-image: url(../images/gokunoirblanc.jpg);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau9{
+    background-image: url(../images/dekunoirblanc.jpg);
+    margin-left: 10px;
+    margin-bottom: 7px;
+    transition: 3s;
+}
+
+.tableau10{
+    background-image: url(../images/allmightnoirblanc.jpg);
+    margin-right: 10px;
+    margin-top: 7px;
+    transition: 3s;
+}
+
+.tableau11{
+    background-image: url(../images/gutsnoirblanc.jpg);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    transition: 3s;
+}
+
+.tableau12{
+    background-image: url(../images/meruemnoirblanc.jpg);
+    margin-left: 10px;
+    margin-top: 7px;
+    transition: 3s;
+}
+
+.tableau-details{
+    background-color: #FFFFFFDF;  /* couleur de la banniere */
+    position: absolute;  /* definir une position qui ne bougera pas */
+    bottom: 0;   /* placement en bas */
+    width: 100%;
+    padding: 5px 20px;   /* haut/bas et gauche */
+}
+
+.tableau-name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #442408;
+    line-height: 0px;
+}
+
+/* .tableau-price{
+    color: #bc8a5f;
+    font-weight: 800;
+    line-height: 3px;
+    font-size: 15px;
+} */
+
+
+
+
+
+/* gallery couleurs et noir/blanc */
+.img-gallery{
+    width: 80%; /* largeur image */
+    margin: 100px auto 50px;    /* position : hauteur, ... */
+    display: grid;   /* permet de mettre une grid */
+    grid-template-columns: repeat( auto-fit , minmax(350px, 1fr) );   /* fait apparaitre la grid */
+    grid-gap: 30px;   /* espacement */
+}
+
+.img-gallery img{
+    width: 100%;   /* taille que l'image prend */
+    cursor: pointer;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);   /* taille et inclinaison */
+    border-radius: 10px;   /* bord arrondit */
+
+    /* box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2); */
+}
+
+/* .img-details{
+    width: 300px;
+} */
+
+.full-img {
+    width: 100%;   /* full img taille largeur lorsqu'on agrandit */
+    height: 100vh;  /* full img taille longeur lorsqu'on agrandit */
+    background: rgba(0, 0, 0, 0.9);     /* couleur arriere plan */
+    position: fixed;   /* permet de l'afficher */
+    top: 0;   /* au dessus */
+    left: 0;   /* gauche */
+    display: none;
+    align-items: center;   /* centrer image  */
+    justify-content: center;  /* item centré */
+    z-index: 100;    /* image click disparait */
+}
+
+.full-img img{
+width: 90%;   /* largeur image */
+max-width: 700px;  /* taille max */
+}
+
+.full-img span{
+    position: absolute;
+    /* mettre la croix a une position donner strict */
+    top: 5%; /* au dessus */
+    right: 5%;  /* droite */
+    font-size: 30px;   /* taille */
+    color: white;
+    cursor: pointer;
+}
+
+
+.explica {
+    text-align: center;
+    display: block;
+}
+
+.explica h4 {
+    font-size: 20px;
+    margin: 5px;
+    color: #442408;
+}
+
+.explica p {
+    font-size: 15px;
+    color: #442408;
+}
+
+
+
+
+
+
+/* contact */
+
+.titre-contact{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;  /* taille */
+    color: #442408;
+}
+
+.paragraphe-contact{
+    display: flex;
+    text-align: center;
+    font-size: 100%;
+    color: #442408;
+    margin:0px 25% 30px 25%;   /* haut, gauche bas droite*/
+
+    /* justify-content: center; */
+}
+
+/* .titre-contact h2 {
+    text-align: center;
+    color: #634e35; 
+} */
+
+form {
+    max-width: 400px;   /* max largeur */
+    margin: 0 auto;  /* position */
+    padding: 20px;   /* autour de la fiche contact */
+    background-color: #F0EBE3; /* beige */
+    border-radius: 5px;  /* arrondit */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);   /* vers la d, vers le bas,.. , tout autour  */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #634e35; /* brun */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #634e35; /* brun */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+textarea {
+    height: 100px;   /* hauteur message */
+}
+
+.check{
+    display: flex;
+}
+
+.info-aste{
+    margin: 10px;
+}
+
+button[type="submit"] {
+    background-color: #634e35; /* brun */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: #4a3828; /* brun plus foncé au survol */
+}
+
+
+
+
+
+/* Notre histoire */
+.history{
+    margin: 50px;
+}
+
+.notrehistoire{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+    color: #442408;
+
+    /* background-color: aqua; */
+    /* align-items: stretch;     rempli l'axe secondaire */
+}
+
+.gauche{
+    width: 50%;
+}
+
+.me img {
+    width: 90%;
+    height: 70%;
+    border-radius: 30px;
+}
+
+/* .textme{
+    text-align: center;
+    background-color: #EAD8C0;
+    border-radius: 55px;
+    margin: 15px;
+    padding: 10px 20px 10px 20px;
+} */
+
+.texttout{
+    background-color: #F0EBE3;
+    width:50%;    /* largeur du contenant */
+    height: 100%;
+   
+    text-align: center;   /* text centre */
+    display: flex;   /* permet de bouger les éléments du contenant */
+    flex-direction: column;
+    border-radius: 55px;   /* arrondit */
+    padding: 10px 20px 10px 20px;    /*position du texte dans le contenat hauteur, droite, bas, gauche */
+
+
+     /* margin-left: 40px;  */
+     /* list-style: none; */
+    /* justify-content: center; */
+    /* margin: 15px; */
+}
+
+.taille-text{
+    font-weight: 400px; 
+    font-size: 20px;
+}
+
+.taille-tittre{
+    font-size: 35px;
+}
+
+
+
+
+/* histoire video et img */
+.videos{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* margin: auto; */
+}
+
+.video{
+    width: 17%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video div{
+    height: 90%;
+    width: 90%; 
+}
+
+.video div video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+.video div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.video h4{
+    /* height: 8%; */
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px 10px 5px 10px;   /* ha, d, b, g */
+    background-color: #F0EBE3;
+
+    /* margin-top: 10px; */
+}
+
+
+

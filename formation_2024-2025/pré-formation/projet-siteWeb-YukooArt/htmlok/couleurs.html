@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery couleurs</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <script defer src="../js/couleurorno.js"></script>
+    <script defer src="../js/tout-tableau.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon (2).ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script> <!-- lien pour les icons -->
+
+</head>
+<body>
+
+    <section class="top-page2">
+
+        <header class="header">
+            <img src="../images/blacklogo.png" alt="logo du site">
+            <nav class="nav">
+                <li><a href="htmlindex.html">Accueil</a> </li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Tableaux <i class="fas fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="../htmlok/tout-tableau.html">Principal</a>
+                      <a href="../htmlok/couleurs.html">Couleurs</a>
+                      <a href="../htmlok/noir&blanc.html">Noir/Blanc</a>
+                    </div>
+                  </div>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="histoire.html">Notre histoire</a> </li>
+            </nav>
+        </header>
+    
+    <div class="full-img" id="fullImgBox">
+        <img src="../imagesgrande/astacouleur.jpg" id="fullImg" alt="astacouleur">
+        <span onclick="closeFullImg()">X</span>
+        <!-- span met en évidence une partie -->
+
+    </div>
+
+    <div class="img-gallery">
+       <div class="explica"><img class="img-details" src="../imagesgrande/astacouleur.jpg" alt="astacouleur" onclick="openFullImg(this.src)">
+        <h4>Asta</h4> <p>Dépourvu de pouvoirs magiques mais doté d'une détermination inébranlable, défie les normes pour réaliser son rêve de devenir le plus grand mage.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/brolycouleur.jpg" alt="brolycouleur"onclick="openFullImg(this.src)"><h4>Broly</h4> <p>Incarne la puissance brute et dévastatrice, un titan parmi les guerriers de l'univers Dragon Ball.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/doficouleur.jpg" alt="doficouleur" onclick="openFullImg(this.src)"><h4>Doflamingo</h4> <p>
+            Manipulateur machiavélique maîtrisant à la perfection l'art du chaos et de la manipulation dans One Piece.</p></div>
+
+      <div class="explica">  <img class="img-details" src="../imagesgrande/gohancouleur.jpg" alt="gohancouleur" onclick="openFullImg(this.src)"><h4>Gohan</h4> <p>Fils de Goku, un guerrier qui allie force et intelligence pour défendre la paix dans l'univers Dragon Ball.</p></div>
+
+       <div class="explica"> <img class="img-details" src="../imagesgrande/gokucouleur.jpg" alt="gokucouleur" onclick="openFullImg(this.src)"><h4>Goku</h4> <p>Légendaire Saiyan, incarne la détermination infatigable et la soif constante de devenir plus fort pour protéger ses proches et défendre la justice.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/kakashicouleur.jpg" alt="kakashicouleur" onclick="openFullImg(this.src)"><h4>Kakashi</h4> <p>
+            Ninja légendaire doté d'une intelligence hors du commun et d'une maîtrise incomparable du ninjutsu dans Naruto.</p></div>
+
+       <div class="explica"> <img class="img-details" src="../imagesgrande/luffycouleur.jpg" alt="luffycouleur" onclick="openFullImg(this.src)"><h4>Luffy</h4> <p>Capitaine audacieux du Straw Hat Pirates, recherche le One Piece pour devenir le Roi des Pirates dans One Piece.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/nezukocouleur.jpg" alt="nezukocouleur" onclick="openFullImg(this.src)"><h4>Nezuko</h4> <p>Sœur dévouée et combattante silencieuse, utilise sa force démoniaque pour protéger son frère Tanjiro et défendre l'humanité dans Demon Slayer.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/tojicouleur.jpg" alt="tojicouleur" onclick="openFullImg(this.src)"><h4>Toji</h4> <p>Personnage mystérieux et puissant, est un ex-chasseur de démons redoutable et le père de Megumi Fushiguro dans Jujutsu Kaisen.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/trafacouleur.jpg" alt="trafacouleur" onclick="openFullImg(this.src)"><h4>Trafalgar</h4> <p>Chirurgien brillant et un redoutable pirate, manie son pouvoir de Fruit du Démon pour défier les lois de la médecine et de la mer dans One Piece.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/yuyucouleur.jpg" alt="yuyucouleur" onclick="openFullImg(this.src)"><h4>Yusuke</h4> <p>Protagoniste rebelle et intrépide de Yu Yu Hakusho, évolue d'un voyou à un puissant détective spirituel chargé de protéger le monde des esprits et des démons.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/zarakicouleur.jpg" alt="zarakicouleur" onclick="openFullImg(this.src)"><h4>Zaraki</h4> <p>Guerrier intrépide et sauvage, est le capitaine de la 11e division de la Soul Society dans Bleach, incarnant la puissance brute et l'insouciance face au danger.</p></div>
+
+        <div class="explica"><img class="img-details" src="../imagesgrande/zorocouleur.jpg" alt="zorocouleur" onclick="openFullImg(this.src)"><h4>Zoro</h4> <p>Redoutable bretteur au bandeau vert, est le bras droit fidèle de Luffy dans One Piece, poursuivant son rêve de devenir le plus grand épéiste du monde avec détermination et courage.</p></div>
+
+    </div>
+
+    <section class="footer">
+        <p class="copy-right">&copy; 2024 - Yukooo_art - Tous droits réservés</p>
+        <p class="faitavec"> Fait avec <img width="10" src="https://cdn-icons-png.flaticon.com/128/35/35538.png" alt="coeur">
+        </p>
+        <div>
+            <a href="https://www.tiktok.com/@yukooo_art" target="_blank"><img width="30px" src="https://cdn-icons-png.flaticon.com/128/1946/1946552.png" alt="tiktok"></a>
+            <a href="https://www.instagram.com/yukooo_art/" target="_blank"><img width="30px" src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" alt="Logo Instagram"></a>
+            </div>
+</section>
+
+</body>
+</html>

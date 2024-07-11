@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire </title>
+    <link rel="stylesheet" href="./css.css">
+    <script defer src="./js.js"></script>
+</head>
+<body>
+    
+    <div class="all">
+        <form class="contact-form" id="contactForm">
+            <div class="first">
+                <h4>Ajouter une tâche :</h4>
+                <label for="Nom">Nom de la tâche :</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex: HTML/CSS" required pattern="[A-Za-zÀ-ÿ\s]+" maxlength="200">
+                <label for="message">Description :</label>
+                <textarea id="message" name="message" placeholder="Ex: 3e chapitre d'HTML" rows="4" spellcheck=""></textarea>
+            </div>
+    
+            <div class="date">
+                <div class="gauche">
+                    <label for="start-date">Date de début:</label>
+                    <input type="date" id="start-date" name="start-date" min="2024-05-17"  required>
+                </div>
+                <div class="droite">
+                    <label for="end-date">Date de fin:</label>
+                    <input type="date" id="end-date" name="end-date" min="2024-05-17" >
+                </div>
+            </div>
+    
+            <label for="NomPersonne">Assigner à:</label>
+            <select name="NomPersonne" id="NomPersonne" required>
+                <optgroup label="Groupe1">
+                    <option value="Tchek">Miss</option>
+                    <option value="Ayoub">Ayoub</option>
+                </optgroup>
+                <optgroup label="Groupe2">
+                    <option value="Anissa">Anissa</option>
+                    <option value="Keltou">Tchek</option>
+                    <option value="Keltou">Keltou</option>
+                </optgroup>
+            </select>
+    
+            <div class="check">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter"> tâche urgente !! </label>
+            </div>
+            <div class="info-aste"> Merci de remplir correctement ce formulaire 🫰</div>
+            
+            <div class="button">
+                <button type="reset"> Effacer les données</button>
+                <button type="button" id="ajouterTache">Ajouter</button>
+            </div>
+        </form>
+        
+        
+        <form class="contact-form scroll" id="listeTachesForm"> <!--form:  formulaire HTML -->
+            <table>  <!-- table: qui permet de définir l’objet “tableau”. -->
+                <thead>  <!-- thead: définir l'en-tête d'un tableau -->
+                    <tr>  <!--tr: pour définir une ligne du tableau. -->
+                        <th>Nom</th>  <!--td: pour définir une une cellule de la ligne. -->
+                        <!-- <th>Description</th> -->
+                        <th>Date de début</th>
+                        <th>Date de fin</th>
+                        <th>Assigner à</th>
+                        <th>Tâche urgente</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody" id="tableBody"></tbody>  <!--tbody: définir le corps d'un tableau. -->
+            </table>
+        </form>
+    
+    </div>
+    
+
+</body>
+</html>

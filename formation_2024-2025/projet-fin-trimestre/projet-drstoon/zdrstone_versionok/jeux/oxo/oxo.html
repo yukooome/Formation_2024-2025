@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OXO</title>
+    <link rel="stylesheet" href="/zdrstone_versionok/jeux/oxo/oxo.css">
+    <script defer src="/zdrstone_versionok/jeux/oxo/oxo.js"></script>
+
+
+
+    
+    
+<!-- font 1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font4 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+    <header class="desktop-nav">
+        <nav class="nav-barre">
+            <ul>
+                <header class="desktop-nav">
+                    <nav class="nav-barre">
+                        <ul>
+                            <li><img src="/zdrstone_versionok/images/logo2.png" alt="Logo" class="nav-logo"></li>
+                            <li><a href="/zdrstone_versionok/acceuil/acceuil.html">Accueil</a></li>
+                                <li><a href="/zdrstone_versionok/personnage/acceuilperso.html">Personnages</a></li>
+                                <li><a href="#">Skills</a></li>
+                            
+                                <li><a href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+                                <li><a href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+                                <li><a href="/zdrstone_versionok/contact/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        </nav>
+    </header>
+
+</section>
+
+
+
+    <section class="oxo">
+
+        <div class="main" id="main">
+          <!-- <p>Placez la souris sur la boîte pour voir l'effet:</p> -->
+    <div class="box">
+      <div class="box-inner">
+        <div class="box-front">
+          <!-- <h2>Survoler</h2> -->
+        </div>
+        <div class="box-back">
+            <p id="ins">
+                Pour commencer à jouer, appuie sur une case.<br>
+                Chaque joueur attend son tour.<br>
+                Aligne  3 symboles pour gagner.<br>
+                Combinaisons possibles : horizontale, verticale ou oblique.<br>
+                Le premier joueur commence avec le <b>"X"</b> et le second a le <b> "0" </b>.<br>
+                <!-- A toi de jouer !!<br>
+                Que la science soit avec toi !!! -->
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="box-inner2">
+        <div class="box-front2">
+          <!-- <h2>Survoler</h2> -->
+          <p>
+            Apprendre à anticiper les mouvements de l'adversaire et à planifier nos propres coups. Cela développe la capacité à penser à l'avance et à résoudre des problèmes.
+              
+          </p>
+        </div>
+        <div class="box-back2">
+          <p>
+            développe la pensée stratégique et la résolution de problèmes, on apprend à anticiper et planifier nos coups. Il introduit aussi des concepts mathématiques de base de manière ludique. C'est une porte d'entrée vers des notions complexes en théorie des jeux, intelligence artificielle et programmation. Ce jeu simple est donc un excellent outil éducatif pour tous les âges.
+              
+          </p>
+        </div>
+      </div>
+    </div>
+
+        </div>
+
+    <div class="main" id="main">
+      <h3>Que la science soit avec toi !!!</h3>
+        <label for="gameMode">Mode de jeu:</label>
+        <select id="gameMode" onchange="changeGameMode()">
+            <option value="2p"> Jouer à deux</option>
+            <option value="cpu">Jouer seul(e)</option>
+        </select>
+        <br><br>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" readonly>
+                <input type="text" id="b2" class="cell" readonly>
+                <input type="text" id="b3" class="cell" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b4" class="cell" readonly>
+                <input type="text" id="b5" class="cell" readonly>
+                <input type="text" id="b6" class="cell" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b7" class="cell" readonly>
+                <input type="text" id="b8" class="cell" readonly>
+                <input type="text" id="b9" class="cell" readonly>
+            </div>
+        </div>
+        <br><br><br>
+        <button id="but" class="but" onclick="myfunc_2()">RESET</button>
+        <br><br>
+        <p id="print" class="print"></p>
+    </div>
+
+    <div class="main" id="main">
+        <!-- <div class="ecrit">
+        <p id="ins">
+
+            A toi de jouer !!<br>
+            Que la science soit avec toi !!!
+        </p>
+        </div>
+        <div class="ecrit">
+            <p id="ins">
+              Apprendre à anticiper les mouvements de l'adversaire et à planifier nos propres coups. Cela développe la capacité à penser à l'avance et à résoudre des problèmes.
+                
+            </p>
+            </div> -->
+    </div>
+    </section>
+  
+    
+  
+    <section>
+      <footer class="footer">
+          <div class="container-footer">
+           <div class="row-footer">
+             <div class="footer-col">
+               <h4>companie</h4>
+               <ul>
+                 <li><a href="#">à propos</a></li>
+                 <li><a href="#">nos services</a></li>
+                 <li><a href="#">politique privé</a></li>
+                 <!-- <li><a href="#">affiliate program</a></li> -->
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Plus aide</h4>
+               <ul>
+                 <li><a href="#">FAQ</a></li>
+                 <li><a href="#">...</a></li>
+                 <li><a href="#">...</a></li>
+                 <li><a href="#">...</a></li>
+                 <!-- <li><a href="#">shipping</a></li> -->
+                 <!-- <li><a href="#">returns</a></li> -->
+                 <!-- <li><a href="#">order status</a></li> -->
+                 <!-- <li><a href="#">payment options</a></li> -->
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>goodies</h4>
+               <ul>
+                 <li><a href="#">watch</a></li>
+                 <li><a href="#">bag</a></li>
+                 <li><a href="#">shoes</a></li>
+                 <li><a href="#">dress</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Nous suivre</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </footer>
+  </section>
+  
+
+</body>
+</html>

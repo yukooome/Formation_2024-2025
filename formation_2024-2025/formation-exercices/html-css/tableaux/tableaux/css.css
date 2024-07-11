@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    width: 100%;
+}
+
+.all{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container {
+    /* background-color: aqua; */
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+
+    tr> td:first-child{
+        background-color: #007BFF;
+    color: #f1f1f1;
+    }
+}
+
+/* soit on ecrit comme juste au dessus : " tr> td:first-child{
+    background-color: aqua;
+}" ou alors on met une classe =>
+.semaine{
+    background-color: #007BFF;
+    color: #f1f1f1;
+} */
+
+.planning-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.planning-table th,
+.planning-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.planning-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.planning-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.planning-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.htmlcss{
+    background-color: #6971af;
+    color: azure;
+}
+.c{
+    background-color: hwb(220 10% 46%);
+    color: azure;
+}
+
+.js{
+    background-color: hwb(215 30% 35%);
+    color: azure;
+}
+
+.illustrator{
+    background-color: hsl(211, 67%, 73%);
+    color: azure;
+}
+
+.photoshop{
+    background-color: hsl(211, 62%, 84%);
+    color: azure;
+}
+
+
+/* tableau 2 */
+
+.container2 {
+    
+    width: 90%;
+    margin: 20px auto;
+    overflow: auto;
+    max-height: 30vh;
+
+}
+/* 
+tbody tr:nth-child(even) {
+    background-color: #007BFF;
+} */
+
+.color th,
+.color td{
+    background-color: lightskyblue;
+    color: #f1f1f1;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+

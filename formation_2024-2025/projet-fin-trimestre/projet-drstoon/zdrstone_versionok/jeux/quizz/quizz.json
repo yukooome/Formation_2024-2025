@@ -1,0 +1,182 @@
+[
+  {
+    "number": 1,
+    "question": "Quelle est la première invention que Senku réalise après le réveil de la pétrification ?",
+    "options": [
+      " Le microscope",
+      " Le téléphone portable",
+      " L'ordinateur portable",
+      " La poudre à canon."
+    ],
+    "answer": "option4"
+  },
+
+  {
+    "number": 2,
+    "question": "Quel est l'élément clé utilisé par Senku pour recréer la civilisation moderne ?",
+    "options": [
+      "La magie",
+      "Les pierres précieuses",
+      "La science",
+      "Les artefacts anciens"
+    ],
+    "answer": "option3"
+  },
+  {
+    "number": 3,
+    "question": "Comment Senku produit-il de l'électricité ?",
+    "options": [
+      "En construisant une centrale électrique à charbon",
+      "En utilisant des panneaux solaires et éoliennes",
+      "En faisant exploser des cristaux",
+      "En capturant des éclairs"
+    ],
+    "answer": "option2"
+  },
+   {
+    "number": 4,
+    "question": "Quel est le rôle de la boussole dans les aventures de Senku ?",
+    "options": ["Guider vers des trésors cachés", "Trouver son chemin dans la forêt", "Indique le nord pour la navigation", "Détecte des pierres précieuses"],
+    "answer": "option3"
+  },
+  {
+    "number": 5,
+    "question": "Quelle est l'utilité de la machine à laver créée par Senku ?",
+    "options": [
+      "Nettoyer les vêtements",
+      "Fabriquer de la glace",
+      "Transformer des pierres en or",
+      "Cultiver des plantes"
+    ],
+    "answer": "option1"
+  },
+  {
+    "number": 6,
+    "question": "Comment Senku fabrique-t-il du soda ?",
+    "options": ["mélanger : eau gazeuse, fruits et sucre", "enlever l'air du sol", "Grâce a la magie", "En faisant faire monter des bactéries"],
+    "answer": "option1"
+  },
+  {
+    "number": 7,
+    "question": "Quel est l'objectif principal de Senku dans la fabrication du verre ?",
+    "options": [
+      "Créer des lunettes de soleil",
+      "Fabriquer des armes",
+      "Construire des Télescopes",
+      "Sculpter des figurines Manga"
+    ],
+    "answer": "option3"
+  },
+  {
+    "number": 8,
+    "question": "Comment Senku purifie-t-il l'eau pour la rendre potable ?",
+    "options": ["En filtrant, à travers des feuilles", "En ajoutant des produits chimiques", "En la faisant bouillir", "En utilisant des filtres à café"],
+    "answer": "option3"
+  },
+  {
+    "number": 9,
+    "question": "Quelle est la première chose que Senku construit pour aider la communauté ?",
+    "options": [
+      "Une école",
+      "Un hôpital",
+      "Un laboratoire",
+      "Une ferme"
+    ],
+    "answer": "option2"
+  },
+
+  {
+    "number": 10,
+    "question": "Comment Senku communique-t-il avec les autres humains pétrifiés ?",
+    "options": ["Signaux de fumée", "pigeon voyageur", "message dans des bouteilles", "gravure de messages sur Pierre"],
+    "answer": "option4"
+  },
+  {
+    "number": 11,
+    "question": "Quel personnage est le protagoniste principal ?",
+    "options": [
+      "Senku",
+      "Taiju",
+      "Yuzuria",
+      "Tsukasa"
+    ],
+    "answer": "option1"
+  },
+  {
+    "number": 12,
+    "question": "Quel est le meilleur ami de Senku depuis l'enfance ?",
+    "options": ["Taiju", "Chrome", "Gen", "Tsukasa"],
+    "answer": "option1"
+  },
+  {
+    "number": 13,
+    "question": "Quel personnage est surnommé le 'Sorcier de la pierre' ?",
+    "options": [
+      "Gen",
+      "Chrome",
+      "Kohaku",
+      "Senku"
+    ],
+    "answer": "option2"
+  },
+
+  {
+    "number": 14,
+    "question": "Qui est le chef du 'Royaume de la Science' ?",
+    "options": [
+      "Senku",
+      "Tsukasa",
+      "Gen",
+      "Kohaku"
+    ],
+    "answer": "option1"
+  },
+  {
+    "number": 15,
+    "question": "Un sorcier qui ne peut pas faire de magie est connu sous le nom de :",
+    "options": ["Né-Moldu", "Moldu", "Cracmol", "Sang-De-Bourbe"],
+    "answer": "option3"
+  },
+  {
+    "number": 16,
+    "question": "Lequel de ces p n'a jamais été Mangemort ?",
+    "options": [
+      "Peter Pettigrew",
+      "Horace Slughorn",
+      "Severus Rogue",
+      "Lucius Malfoy"
+    ],
+    "answer": "option2"
+  },
+
+  {
+    "number": 17,
+    "question": "Comment s'appelle le phénix de Dumbledore ?",
+    "options": ["Fimseck", "Fimouillé", "Fumseck", "Fumouillé"],
+    "answer": "option3"
+  },
+  {
+    "number": 18,
+    "question": "Quel personnage est tué par le basilic ?",
+    "options": [
+      "Mimi Geignarde",
+      "Ginny Weasley",
+      "Nick Quasi-sans-Tête",
+      "Colin Creevey"
+    ],
+    "answer": "option1"
+  },
+
+  {
+    "number": 19,
+    "question": "Quel est le nom du chien qui garde la Pierre Philosophale ?",
+    "options": ["Crockdur", "Norbert", "Touffu", "Buck"],
+    "answer": "option3"
+  },
+  {
+    "number": 20,
+    "question": "En combien de morceaux Voldemort divise-t-il son âme, en incluant lui-même ?",
+    "options": ["Sept", "Dix", "Trois", "Huit"],
+    "answer": "option4"
+  }
+]

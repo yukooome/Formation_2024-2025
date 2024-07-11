@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Playwrite IS", cursive; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Comic Neue", cursive;
+
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 350;
+  font-size: 1.3rem;
+}
+
+
+/* header */
+header {
+  /* background-color: whitesmoke; */
+  width: 100%;
+  height: 8vh;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0rem 0.2rem 0.75rem;
+}
+
+
+
+
+/* nav */
+.nav-barre {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
+  li {
+      list-style: none;
+      margin: 0 2rem;
+  }
+
+  a {
+      text-decoration: none;
+      color: orange;
+  }
+
+  a:hover {
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid #d3a625;
+  }
+
+  a:active {
+      color: hwb(44 62% 5%);
+  }
+
+}
+
+
+nav ul li img {
+  width: 90px;
+  animation: bounce 2s infinite; /* Ajout de l'animation bouncing */
+}
+
+
+@keyframes bounce {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-20px);
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+
+
+
+
+
+/* Section Inventaire */
+section.invention {
+    width: 100%;
+    height: auto; /* Assurez-vous que la section prend au moins la hauteur de la fenêtre */
+    display: flex;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    padding-top: 50px; /* Ajoutez un peu de padding en haut */
+    padding-bottom: 50px; /* Ajoutez un peu de padding en bas */
+    background-image: linear-gradient(rgba(15, 9, 0, 0.678), rgb(0, 0, 0)), url("../images/fourniture.webp");
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 100px); 
+    color: rgb(255, 255, 255);
+}
+
+.main-container {
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: auto; */
+    /* -ms-overflow-style: none; */
+    /* scrollbar-width: none; */
+}
+
+.main-container::-webkit-scrollbar {
+    /* display: none;  */
+}
+
+/* Style pour le conteneur des personnages */
+.invention h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: orange;
+    text-align: center;
+}
+
+.invention .line {
+    border: 1px solid orange;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* top container */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* GAUCHE */
+.top-left {
+    width: 47%;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0.736);
+    border: 1px solid #444;
+    font-weight: 300;
+}
+
+.top-left div {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    margin: auto;
+}
+
+.top-left h2 {
+    font-size: 30px;
+}
+
+.top-left ol li {
+    font-size: 20px;
+}
+
+/* DROITE */
+.top-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-quarters {
+    height: 70%;
+}
+
+.bottom-quarters {
+    height: 24%;
+}
+
+.quarter1 {
+    height: 100%;
+}
+
+.quarter1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 35%;
+    border: 1px solid #444;
+}
+
+.quarter3 {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.736);
+    border: 1px solid #444;
+    color: #fff;
+    font-weight: 400;
+}
+
+.quarter3 p {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+
+
+
+
+
+
+
+.autre-choix{
+    background-color: rgba(0, 0, 0, 0.537);
+    margin-right: 50px;
+    width: 40%;
+    height: auto;
+}
+
+/* .expli-invention {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+  padding: 5px;
+
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  p{
+    color: #ffffff;
+    font-size: 15px;
+  }
+} */
+
+
+  
+.personnage {
+
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: white;
+}
+
+.fdecran {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* .overlay {
+  position: absolute;
+  top: -70%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+
+.overlay2 {
+  position: absolute;
+  top: -20%;
+  left: 0;
+
+}
+
+.overlay3{
+  position: relative;
+  
+}
+
+.overlay3:hover {
+  transform: scale(1.1);
+}
+
+.image-cote{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 70px; /* Ajustez cette valeur */
+  height: 100px; /* Ajustez cette valeur */
+}
+
+.overlay4{
+  display: flex;
+  position: absolute;
+  top: -110%;
+  left: 25%;
+  width: 70px; /* Ajustez cette valeur */
+  height: 100px; /* Ajustez cette valeur */
+  
+}
+
+.overlay4:hover {
+  opacity: 0;
+  transition: opacity 1s ease; /* Transition douce pour la disparition */
+}
+
+.overlay5{
+  /* background-color: aqua; */
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  width: 70px; /* Ajustez cette valeur */
+  height: 100px; /* Ajustez cette valeur */
+  color: #ffffff;
+  
+}
+
+
+
+
+.information-perso {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #ff8000; */
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-info {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pose {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /* background-color: #d3a625; */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.pose p {
+  width: 100%;
+  margin: 0;
+
+  span{
+    color: orange;
+  }
+}
+
+.pose img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Maintient les proportions et remplit le conteneur */
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* video */
+.video{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:  #000000;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 20px 0; /* Add margin to space out the carousels */
+    /* text-align: center; */
+  }
+  
+  .carousel-container h1 {
+    color: orange;
+  }
+  
+  .line {
+    border: none;
+    height: 1px; /* Épaisseur de départ de la ligne */
+    background-color: orange; /* Couleur de la ligne */
+    width: 100%; /* Largeur de la ligne */
+    margin: 20px 0; /* Marge au-dessus et en dessous de la ligne */
+    position: relative;
+  }
+  
+  .line::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px; /* Pour ajuster la position en fonction de l'épaisseur de la ligne */
+    width: 100%;
+    height: 3px; /* Épaisseur à la fin de la ligne */
+    background-color: orange;; /* Couleur à la fin de la ligne */
+  }
+  
+  
+  .gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .gallery li {
+    flex: 1 0 25%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .gallery li img {
+    width: 100%; /* Remplir complètement l'espace disponible */
+    height: 100%; /* Remplir complètement l'espace disponible */
+    object-fit: cover; /* Ajuster l'image sans déformation */
+    object-position: center; /* Centrer l'image dans le conteneur */
+  }
+  
+
+  
+
+  
+
+/*   
+  
+  
+  /* @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px); 
+    }
+  }
+  
+  .box:hover {
+    animation: moveUp 1s ease-in-out forwards; 
+  }
+ 
+  .box {
+    transition: transform 1s ease-in-out;
+  } */ 
+
+
+
+
+
+/* footer */
+.container-footer{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+      justify-content: center; /* Centre les cartes horizontalement */
+      align-items: center; /* Centre les cartes verticalement */
+      overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+      /* background-color: aqua; */
+      background-image: linear-gradient( #110701,hsla(44, 67%, 55%, 0.747)), url("../images/senkurouge.jpg");
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: orange;;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

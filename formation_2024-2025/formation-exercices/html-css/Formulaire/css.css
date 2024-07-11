@@ -1,0 +1,166 @@
+:root {
+    --brun : #634e35;
+    /* --arrondi : 2rem; */
+}
+
+* {}
+
+body{
+    margin: 0 auto;  
+    padding: auto; 
+    background-color:#e3e8f0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;   /* max largeur */
+    max-height: 80%;
+    margin: 0 auto;  /* position */
+    padding: 20px;   /* autour de la fiche contact */
+    background-color: #F0EBE3; /* beige */
+    border-radius: 5px;  /* arrondit */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);   /* vers la d, vers le bas,.. , tout autour  */
+}
+
+.contact-form{
+    width: 100%;
+    justify-content: space-between;
+    color: var(--brun);
+    
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--brun); /* brun */
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--brun); /* brun */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    h4{
+        color: var(--brun);
+    }
+    
+}
+
+
+.date{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    font-weight: bold;
+    color: var(--brun); /* brun */
+}
+
+.gauche{
+    width: 100%;
+    height: auto;
+}
+
+.droite{
+    width: 100%;
+    height: auto;
+}
+
+
+.check{
+    display: flex; 
+}
+
+.info-aste{
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+button {
+    background-color: var(--brun); /* brun */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: var(--brun); /* brun plus foncé au survol */   
+}
+
+
+.titre {
+
+    h4{
+        color: var(--brun);
+    }
+}
+
+.titre-label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid var(--brun);
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+    /* height: 50px; */
+    text-align: center;
+    vertical-align: top;
+}
+
+.urgent {
+    color: red;
+}
+
+#tableBody{
+    
+    
+}
+
+.tbody{
+
+}

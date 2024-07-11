@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acceuil</title>
+    <link rel="stylesheet" href="../acceuil/acceuil.css">
+    <script defer src="../acceuil/acceuil.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+<!-- font 1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+<!-- font3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font4 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+
+
+    
+
+    
+</head>
+<body>
+
+                <header class="desktop-nav">
+                    <nav class="nav-barre">
+                        <ul>
+                            <li><img src="../images/logo2.png" alt="Logo" class="nav-logo"></li>
+                            <li><a href="#accueill">Accueil</a></li>
+                                <li><a href="/zdrstone_versionok/personnage/acceuilperso.html">Personnages</a></li>
+                                <li><a href="#skill">Skills</a></li>
+                                <!-- <li><a href="#jeux">Nos jeux</a></li> -->
+                               
+                                <li><a href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+                                <li><a href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+                                <li><a href="/zdrstone_versionok/contact/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+
+    <!-- si en mobile -->
+ 
+    <header class="mobil-nav">
+        <div class="nav-mob">
+            <!-- <img src="../images/logo2.png" alt="Logo" class="nav-logo"> -->
+        <ul class="menu">
+            <li><a class="menuItem" href="#">Accueil</a></li>
+            <li><a class="menuItem" href="/zdrstone_versionok/personnage/acceuilperso.html">Personnages</a></li>
+            <li><a class="menuItem" href="#">Skills</a></li>
+            <li><a class="menuItem" href="/zdrstone_versionok/jeux/acceuiljeux/acceuljeux.html">Nos jeux</a></li>
+            <li><a class="menuItem" href="/zdrstone_versionok/blog/blog.html">Blog</a></li>
+            <li><a class="menuItem" href="/zdrstone_versionok/contact/contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+    </header>
+
+
+    
+
+    <section class="container">
+
+        <div class="pubg scalation">
+            <h2>Dr. Stone, découvrez un monde remplit de science !</h2>
+            <p>
+                Dr. Stone est une série de vidéos éducatives et divertissantes diffusées principalement sur YouTube, créée par un animateur passionné de sciences et de vulgarisation scientifique. Le personnage principal, Dr. Stoon, est un scientifique excentrique et génial qui, avec son laboratoire rempli de gadgets et d'inventions farfelues, embarque les spectateurs dans des aventures captivantes tout en leur enseignant des concepts scientifiques.</p>
+            <a href="http://example.com" target="_blank">
+                    <button>en savoir plus →</button>
+            </a>
+        </div>
+
+    <div class="genre-info">
+        <div class="block1">
+            <div class="fist">
+                <h2>étoiles</h2>
+                <div class="etoile">
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="fist">
+                <h2>Genre</h2>
+                <p >Science, Comédie, Nature</p>
+            </div>
+            <div class="fist">
+                <h2>Studio</h2>
+                <p>TMS Entertainment Co.</p>
+            </div>
+        </div>
+            
+        
+        <div class="block2">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="../images/3perso.jpg" alt="Image 1" class="carousel-image">
+                <div class="carousel-text">
+                  <h2>Découverte</h2>
+                  <p>Paragraphe descriptif pour l'image 1.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/equipevibe2.webp" alt="Image 2" class="carousel-image">
+                <div class="carousel-text">
+                  <h2>Science</h2>
+                  <p>Paragraphe descriptif pour l'image 2.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/equipepont.png" alt="Image 3" class="carousel-image">
+                <div class="carousel-text">
+                  <h2>Aventure</h2>
+                  <p>Paragraphe descriptif pour l'image 3.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+    </div>
+    </section>
+
+
+
+
+    <section class="vide">
+
+        <!-- <hr class="line"> -->
+        <div class="walou"></div>
+
+        
+
+
+  <div class="all">
+    <div class="separe">
+        <div class="cont-tot">
+            <div class="top-container">
+                <div class="top-left">
+                    <h2>Qu'est ce que c'est ?</h2>
+                    <p>Bien plus qu'un anime. C'est une leçon de science passionnante et accessible qui transforme l'apprentissage en une aventure palpitante. À travers les aventures de Senku pour redécouvrir la technologie dans un monde post-apocalyptique, la série enseigne de manière ludique des concepts scientifiques variés comme la chimie, la physique et la biologie. Chaque épisode est une immersion dans la créativité et l'ingéniosité, montrant que la science peut être à la fois amusante et instructive. En combinant humour, suspense et exploration scientifique, "Dr. Stone" captive son public en leur offrant une expérience éducative enrichissante et divertissante.</p>
+                </div>
+                <div class="top-right">
+                    <div class="top-quarters">
+                        <img>
+                    </div>
+                    <div class="bottom-quarters">
+                        <div >
+                            <p>Dr. Stone" est une série de manga et d'anime qui raconte l'histoire de Senku Ishigami, un jeune génie scientifique, et de ses amis après que l'humanité a été pétrifiée pendant plus de 3 700 ans. Réveillé dans un monde où la civilisation moderne a disparu, Senku utilise ses vastes connaissances en science pour reconstruire la société à partir de zéro. Avec des thèmes de survie, d'ingéniosité et de collaboration, "Dr. Stone" célèbre la puissance de la science et de l'esprit humain pour surmonter les défis et redécouvrir les merveilles de la technologie.</p>
+                            <p>Dr. Stone" est une série de manga et d'anime qui raconte l'histoire de Senku Ishigami, un jeune génie scientifique, et de ses amis après que l'humanité a été pétrifiée pendant plus de 3 700 ans. Réveillé dans un monde où la civilisation moderne a disparu, Senku utilise ses vastes connaissances en science pour reconstruire la société à partir de zéro. Avec des thèmes de survie, d'ingéniosité et de collaboration, "Dr. Stone" célèbre la puissance de la science et de l'esprit humain pour surmonter les défis et redécouvrir les merveilles de la technologie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+
+
+       <div class="separe2">
+        <div class="cont-tot">
+            <div class="top-container">
+                <div class="top-left">
+                    <h2>Apport bénéfique</h2>
+                    <p>Grâce à ses situations comiques créées par le contraste entre le savoir scientifique avancé de Senku et le monde préhistorique où il se trouve, "Dr. Stone" ne manque jamais de susciter des rires. Les tentatives souvent maladroites pour réinventer des technologies simples, comme la fabrication de savon ou la création d'électricité, sont sources de scènes hilarantes. De plus, les interactions entre les personnages principaux, chacun avec sa propre personnalité distincte, ajoutent une couche supplémentaire de comédie. Senku, le génie excentrique mais pragmatique, et Taiju, l'ami loyal mais un peu simple d'esprit, provoquent des dialogues et des situations comiques tout au long de la série..</p>
+                </div>
+                <div class="top-right">
+                    <div class="top-quarters">
+                        <div class="quarter1">
+                            <img>
+                        </div>
+                        <div class="quarter2">
+                            <img>
+                        </div>
+                    </div>
+                    <div class="bottom-quarters2">
+                        <p>Dr. Stone" est une série de manga et d'anime qui raconte l'histoire de Senku Ishigami, un jeune génie scientifique, et de ses amis après que l'humanité a été pétrifiée pendant plus de 3 700 ans. Réveillé dans un monde où la civilisation moderne a disparu, Senku utilise ses vastes connaissances en science pour reconstruire la société à partir de zéro. Avec des thèmes de survie, d'ingéniosité et de collaboration, "Dr. Stone" célèbre la puissance de la science et de l'esprit humain pour surmonter les défis et redécouvrir les merveilles de la technologie.
+                            Dr. Stone" est une série de manga et d'anime qui raconte l'histoire de Senku Ishigami, un jeune génie scientifique, et de ses amis après que l'humanité a été pétrifiée pendant plus de 3 700 ans. Réveillé dans un monde où la civilisation moderne a disparu, Senku utilise ses vastes connaissances en science pour reconstruire la société à partir de zéro. Avec des thèmes de survie, d'ingéniosité et de collaboration, "Dr. Stone" célèbre la puissance de la science et de l'esprit humain pour surmonter les défis et redécouvrir les merveilles de la technologie.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container">
+            </div>
+        </div>
+       </div>
+  </div>
+
+
+  <div class="animation">
+    <img class="fiole" src="../images/fiole.png" alt="">
+  </div>
+
+
+<!-- tresor -->
+  <div class="tresors">
+
+    <div class="map-container">
+        <img src="../images/map4.avif" alt="Carte au Trésor" class="map">
+
+
+        <div class="treasure" id="treasure"></div>
+    </div>
+    <div class="funfact">
+        <button class="sorry4urEyes" id="find-button">Fun Fact ↑</button>
+        <div class="paragraphe-fun" id="find-button">"Amusons-nous à découvrir des faits scientifiques ! Ou pas ..."</div>
+    </div>
+
+    <!-- Modal -->
+    <div id="fact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="fact-text">Fait scientifique aléatoire...</p>
+        </div>
+    </div>
+
+  </div>
+       
+
+
+
+      <!-- presentation et interet -->
+      <!-- <div class="presentation">
+        <div class="carte-presentation partie1">
+            <h3>Amuser et Divertir</h3>
+            <p>Nous voulons avant tout vous offrir un lieu de divertissement où vous pourrez plonger dans l'univers passionnant de Dr. Stone. Que vous soyez un fan de longue date ou un nouveau venu dans cet univers, notre site est conçu pour vous divertir et vous captiver à travers des contenus variés et intéressants.</p>
+        </div>
+        <div class="carte-presentation partie1">
+            <h3>Apprendre et Découvrir</h3>
+            <p>Dr. Stone est une série riche en connaissances scientifiques et en concepts fascinants. Nous souhaitons exploiter cette richesse pour vous faire découvrir de nouvelles choses. Nos articles, vidéos et jeux sont pensés pour éveiller votre curiosité et vous encourager à explorer différents domaines scientifiques.</p>
+        </div>
+        <div class="carte-presentation partie1">
+            <h3>Stimuler la Logique et la Mémoire</h3>
+            <p>L'un des aspects les plus captivants de Dr. Stone est la manière dont la série intègre des défis logiques et des concepts scientifiques complexes. Sur notre site, nous vous proposons des activités et des jeux qui stimuleront votre esprit et renforceront vos capacités logiques et votre mémoire. Que ce soit à travers des puzzles, des quiz ou des expériences scientifiques à réaliser chez vous, nous espérons vous offrir des outils pour développer vos compétences tout en vous amusant.</p>
+        </div>
+        <div class="carte-presentation partie1">
+            <h3>Pour Tous les Âges</h3>
+            <p>En résumé, notre site sur Dr. Stone vise à créer un pont entre le divertissement et l'éducation, en exploitant la richesse de cet univers pour vous offrir des contenus ludiques et instructifs. Nous espérons que vous prendrez autant de plaisir à explorer notre site que nous en avons eu à le créer. Rejoignez-nous dans cette aventure scientifique et amusante !</p>
+        </div>
+        
+
+
+      </div> -->
+
+      <div class="presentation">
+        <div class="carte-presentation partie1">
+          <h3>Amuser et Divertir</h3>
+          <p>Nous voulons avant tout vous offrir un lieu de divertissement où vous pourrez plonger dans l'univers passionnant de Dr. Stone. Que vous soyez un fan de longue date ou un nouveau venu dans cet univers, notre site est conçu pour vous divertir et vous captiver à travers des contenus variés et intéressants.</p>
+        </div>
+        <div class="detailsenplus">
+            click sur la carte pour afficher le contenu
+        </div>
+        <div class="carte-presentation partie1">
+          <h3>Apprendre et Découvrir</h3>
+          <p>Dr. Stone est une série riche en connaissances scientifiques et en concepts fascinants. Nous souhaitons exploiter cette richesse pour vous faire découvrir de nouvelles choses. Nos articles, vidéos et jeux sont pensés pour éveiller votre curiosité et vous encourager à explorer différents domaines scientifiques.</p>
+        </div>
+        <div class="detailsenplus">
+            click sur la carte pour afficher le contenu
+        </div>
+        <div class="carte-presentation partie1">
+          <h3>Stimuler la Logique et la Mémoire</h3>
+          <p>L'un des aspects les plus captivants est la manière dont la série intègre des défis logiques et des concepts scientifiques complexes. Nous vous proposons des activités et des jeux qui stimuleront votre esprit et renforceront vos capacités logiques et votre mémoire. Que ce soit à travers des jeux ou des expériences scientifiques à réaliser chez vous, nous espérons vous offrir des outils pour développer vos compétences.</p>
+        </div>
+        <div class="detailsenplus">
+            click sur la carte pour afficher le contenu
+        </div>
+        <div class="carte-presentation partie1">
+          <h3>Pour Tous les Âges</h3>
+          <p>Notre site vise à créer un pont entre le divertissement et l'éducation, en exploitant la richesse de cet univers pour vous offrir des contenus ludiques et instructifs. Nous espérons que vous prendrez autant de plaisir à explorer notre site que nous en avons eu à le créer. Rejoignez-nous dans cette aventure scientifique et amusante !</p>
+        </div>
+      </div>
+        
+        
+
+
+        <!-- livres -->
+        <div class="carousel-container">
+            
+            <div class="more">
+                <h1>Volumes</h1>
+                <a href="http://example.com" target="_blank">
+                    <button>Plus de volumes →</button>
+            </a>
+            </div>
+            <hr class="line">
+            <ul class="gallery">
+                <li>
+                   
+                            <!-- Carte 1 -->
+                            <div class="">
+                                <img class="" src="../images/vol1.jpg" alt="Image 1">
+                                <div class="text-carte">
+                                    <h2 class="">TOME 1</h2>
+                                    <p class=""> Taiju et Senku se réveillent après des milliers d'années de pétrification. Ensemble, ils utilisent la science pour reconstruire la civilisation et cherchent un moyen de dé-pétrifier l'humanité.</p>
+                                </div>
+                            </div>
+                </li>
+                <li>
+                            <!-- Carte 1 -->
+                            <div class="">
+                                <img class="" src="../images/vol2.jpg" alt="Image 1">
+                                <div class="text-carte">
+                                    <h2 class="">TOME 2</h2>
+                                    <p class=""> Senku et ses amis développent la science pour défendre et dé-pétrifier plus de personnes, avec un accent sur la création de la poudre à canon.</p>
+                                </div>
+                            </div>
+                </li>
+                <li >
+                    
+                            <!-- Carte 1 -->
+                            <div class="">
+                                <img class="" src="../images/vol3.jpg" alt="Image 1">
+                                <div class="text-carte">
+                                    <h2 class="">TOME 3</h2>
+                                    <p class="">L'équipe se concentre sur la création d'électricité pour ramener la technologie moderne dans un monde primitif, tout en affrontant des tensions croissantes avec d'autres groupes humains.</p>
+                                </div>
+                            </div>
+                </li>
+                <li>
+                    
+                            <!-- Carte 1 -->
+                            <div class="">
+                                <img class="" src="../images/vol4.jpg" alt="Image 1">
+                                <div class="text-carte">
+                                    <h2 class="">TOME 4</h2>
+                                    <p class=""> Senku et ses alliés fabriquent des téléphones rudimentaires pour établir des communications à longue distance, tout en explorant de nouveaux matériaux et en confrontant des adversaires avides de leur savoir scientifique.</p>
+                                </div>
+                            </div>
+                </li>
+                <li>
+                    
+                    <!-- Carte 1 -->
+                    <div class="">
+                        <img class="" src="../images/vol5.jpeg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 5</h2>
+                            <p class=""> Royaume de la Science tentent de créer un téléphone portable, surmontant des défis techniques et faisant face à de nouvelles alliances et confrontations.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol6.jpeg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 6</h2>
+                            <p class=""> Royaume de la Science avance dans ses découvertes technologiques tout en affrontant des défis et en nouant des alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol7.jpg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 7</h2>
+                            <p class="">Royaume de la Science progresse technologiquement tout en relevant des défis et en consolidant des alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol8.jpeg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 8</h2>
+                            <p class="">poursuit ses découvertes technologiques tout en affrontant des défis croissants et en consolidant ses alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol9.jpg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 9</h2>
+                            <p class="">poursuit ses découvertes technologiques tout en affrontant des défis croissants et en consolidant ses alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol10.jpg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 10</h2>
+                            <p class="">poursuit ses découvertes technologiques tout en affrontant des défis croissants et en consolidant ses alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol11.jpg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 11</h2>
+                            <p class="">poursuit ses découvertes technologiques tout en affrontant des défis croissants et en consolidant ses alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="">
+                        <img class="" src="../images/vol12.jpg" alt="Image 1">
+                        <div class="text-carte">
+                            <h2 class="">TOME 12</h2>
+                            <p class="">poursuit ses découvertes technologiques tout en affrontant des défis croissants et en consolidant ses alliances pour reconstruire la civilisation.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="indicators">
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+
+
+
+            <!-- mobile book -->
+            <div class="cartebook">
+                <div class="top-book">
+                    <div class="book1">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book2">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="bottom-book">
+                    <div class="book3">
+                        <img src="" alt="">
+                    </div>
+                    <div class="book4">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        
+<!--         
+        <div class="carousel-container">
+            <h1>Vidéos</h1>
+            <hr class="line">
+            <ul class="gallery caroussel3">
+                <li>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ib-DE6Ly2Gg?si=ec6zrX1VAApB-aOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </li>
+                <li >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7JwyoE2jZM0?si=Z0_OioQAP5kfT-Zt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </li>
+                <li >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5H9aIM7CkEg?si=mPNN_0W2lGEGTIOi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </li>
+                <li >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rctmo6lyFt0?si=zyJWFqwMvC9lAV00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </li>
+                <li style="background: #c7110e;">
+                    <span class="text">Texte sous la boule 5</span>
+                </li>
+                <li style="background: #d2f282;">
+                    <span class="text">Texte sous la boule 6</span>
+                </li>
+                <li style="background: #82f2c5;">
+                    <span class="text">Texte sous la boule 7</span>
+                </li>
+                <li style="background: #82a2f2;">
+                    <span class="text">Texte sous la boule 8</span>
+                </li>
+                <li style="background: #500b53;">
+                    <span class="text">Texte sous la boule 9</span>
+                </li>
+                <li style="background: #f28482;">
+                    <span class="text">Texte sous la boule 10</span>
+                </li>
+                <li style="background: #84a59d;">
+                    <span class="text">Texte sous la boule 11</span>
+                </li>
+                <li style="background: #c7110e;">
+                    <span class="text">Texte sous la boule 12</span>
+                </li>
+            </ul>
+            <div class="indicators">
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div> -->
+    </section>
+
+
+
+
+
+
+    
+    
+        
+
+    
+
+
+    <section>
+        <footer class="footer">
+            <div class="container-footer">
+             <div class="row-footer">
+               <div class="footer-col">
+                 <h4>companie</h4>
+                 <ul>
+                   <li><a href="#">à propos</a></li>
+                   <li><a href="#">nos services</a></li>
+                   <li><a href="#">politique privé</a></li>
+                   <!-- <li><a href="#">affiliate program</a></li> -->
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>Plus aide</h4>
+                 <ul>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">...</a></li>
+                   <li><a href="#">...</a></li>
+                   <li><a href="#">...</a></li>
+                   <!-- <li><a href="#">shipping</a></li> -->
+                   <!-- <li><a href="#">returns</a></li> -->
+                   <!-- <li><a href="#">order status</a></li> -->
+                   <!-- <li><a href="#">payment options</a></li> -->
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>goodies</h4>
+                 <ul>
+                   <li><a href="#">watch</a></li>
+                   <li><a href="#">bag</a></li>
+                   <li><a href="#">shoes</a></li>
+                   <li><a href="#">dress</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>Nous suivre</h4>
+                 <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+               </div>
+             </div>
+            </div>
+         </footer>
+    </section>
+
+    
+
+</body>
+</html>
